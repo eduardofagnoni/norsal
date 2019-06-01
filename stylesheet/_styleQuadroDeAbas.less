@@ -1,0 +1,279 @@
+/*-----------------------------------------------
+	Quadro de abas
+-----------------------------------------------*/ 
+section .quadro-abas {
+    display: table;
+    width: 100%;
+    //max-width: 80%;
+    table-layout: fixed;
+    border-spacing: 3px;
+}
+
+@media only screen and (min-width: 320px) {
+    section .quadro-abas .aba {
+        display: table-cell;
+        padding: 14px 0 20px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#fff;
+        font-size: 1.8em;
+        position: relative;
+        z-index: 1;
+        border-top:solid 6px #16598d;
+        cursor: pointer;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2dc4db+61,28b1c5+100 */
+        background: #2dc4db; /* Old browsers */
+        background: -moz-linear-gradient(top, #2dc4db 61%, #28b1c5 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #2dc4db 61%,#28b1c5 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #2dc4db 61%,#28b1c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dc4db', endColorstr='#28b1c5',GradientType=0 ); /* IE6-9 */
+    }
+    section .quadro-abas .aba:hover {
+        display: table-cell;
+        padding: 20px 0 20px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#16598d;
+        font-size: 1.8em;
+        position: relative;
+        z-index: 1;
+        border-top: none;
+        background: #f2f2f2!important;
+    }
+    section .quadro-abas .aba:hover::after {
+        content: "";
+        width: 50px;
+        height: 7px;
+        background-color: #dcdcdc;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -17px;
+        display: block;
+    }
+    section .quadro-abas .ativa {
+        display: table-cell;
+        padding: 20px 0 20px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#16598d;
+        font-size: 1.8em;
+        position: relative;
+        z-index: 1;
+        border-top: none;
+        background: #f2f2f2!important;
+    }
+    section .quadro-abas .ativa::after {
+        content: "";
+        width: 50px;
+        height: 7px;
+        background-color: #dcdcdc;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -17px;
+        display: block;
+    }
+    section div.desc {
+        position: relative;
+        z-index: 2;
+        clear: both;
+        display: block;
+        padding: 25px 20px;
+        background-color: #f2f2f2;
+        margin: -3px 3px 0 3px;
+    }
+    section div.desc::after {
+        content: "";
+        width: 27px;
+        height: 27px;
+        background-color: #f2f2f2;
+        display: block;
+        bottom: -35px;
+        position: relative;
+        margin: 0 auto;
+        transform: rotate(45deg);
+    }
+}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {
+    section .quadro-abas .aba {
+        display: table-cell;
+        padding: 24px 0 30px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#fff;
+        font-size: 2.3em;
+        position: relative;
+        z-index: 1;
+        border-top:solid 6px #16598d;
+        cursor: pointer;           
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2dc4db+61,28b1c5+100 */
+        background: #2dc4db; /* Old browsers */
+        background: -moz-linear-gradient(top, #2dc4db 61%, #28b1c5 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #2dc4db 61%,#28b1c5 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #2dc4db 61%,#28b1c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dc4db', endColorstr='#28b1c5',GradientType=0 ); /* IE6-9 */
+    }
+    section .quadro-abas .ativa {
+        display: table-cell;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#16598d;
+        font-size: 2.3em;
+        position: relative;
+        z-index: 1;
+        border-top: none;
+        background: #f2f2f2!important;
+        cursor:inherit;
+    }
+    section .quadro-abas .ativa::after {
+        content: "";
+        width: 84px;
+        height: 7px;
+        background-color: #dcdcdc;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -27px;
+        display: block;
+    }
+    section .quadro-abas .aba:hover {
+        display: table-cell;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#16598d;
+        font-size: 2.3em;
+        position: relative;
+        z-index: 1;
+        border-top: none;
+        background: #f2f2f2!important;
+    }
+    section .quadro-abas .aba:hover::after {
+        content: "";
+        width: 84px;
+        height: 7px;
+        background-color: #dcdcdc;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -27px;
+        display: block;
+    }
+    section div.desc {
+        position: relative;
+        z-index: 2;
+        clear: both;
+        display: block;
+        padding: 20px 40px;
+        background-color: #f2f2f2;
+        margin: -3px 3px 0 3px;
+    }
+    section div.desc::after {
+        content: "";
+        width: 27px;
+        height: 27px;
+        background-color: #f2f2f2;
+        display: block;
+        bottom: -30px;
+        position: relative;
+        margin: 0 auto;
+        transform: rotate(45deg);
+    }
+} //col-sm
+@media only screen and (min-width: 830px) {}
+@media only screen and (min-width: 992px) {
+    section .quadro-abas .aba {
+        display: table-cell;
+        padding: 24px 0 30px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#fff;
+        font-size: 2.3em;
+        position: relative;
+        z-index: 1;
+        border-top:solid 6px #16598d;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2dc4db+61,28b1c5+100 */
+        background: #2dc4db; /* Old browsers */
+        background: -moz-linear-gradient(top, #2dc4db 61%, #28b1c5 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #2dc4db 61%,#28b1c5 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #2dc4db 61%,#28b1c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dc4db', endColorstr='#28b1c5',GradientType=0 ); /* IE6-9 */
+    }
+    section .quadro-abas .ativa {
+        display: table-cell;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        .texto-openSans;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#16598d;
+        font-size: 2.3em;
+        position: relative;
+        z-index: 1;
+        border-top: none;
+        background: #f2f2f2!important;
+    }
+    section .quadro-abas .ativa::after {
+        content: "";
+        width: 84px;
+        height: 7px;
+        background-color: #dcdcdc;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -27px;
+        display: block;
+    }
+    section div.desc {
+        position: relative;
+        z-index: 2;
+        clear: both;
+        display: block;
+        padding: 45px 99px;
+        background-color: #f2f2f2;
+        margin: -3px 3px 0 3px;
+    }
+    section div.desc::after {
+        content: "";
+        width: 27px;
+        height: 27px;
+        background-color: #f2f2f2;
+        display: block;
+        bottom: -55px;
+        position: relative;
+        margin: 0 auto;
+        transform: rotate(45deg);
+    }
+}
+@media only screen and (min-width: 1382px) {}
+/*-----------------------------------------------
+	Quadro de abas - Fim
+-----------------------------------------------*/ 

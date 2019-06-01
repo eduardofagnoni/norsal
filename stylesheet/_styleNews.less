@@ -1,0 +1,141 @@
+/*-----------------------------------------------
+	Barra Newsletter
+-----------------------------------------------*/
+section.newsletter {
+    padding: 57px 0;
+    background-color: #054165;
+}
+section.newsletter ul {        
+    list-style: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+section.newsletter ul li input::placeholder {
+    color: #2da8db;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 320px) {    
+    section.newsletter ul li {
+        display: block;
+        margin:0 0 0 20px;
+    }
+    section.newsletter ul li header {
+        color: #fff;
+        .texto-montserrat;
+        font-size: 4em;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    section.newsletter ul li p {
+        color: #fff;
+        .texto-openSans;
+        font-size: 1.6em;
+        text-align: left;
+        margin:0 0 10px 0;
+        padding: 0 0 0 0;
+    }
+    section.newsletter ul li input {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px; 
+        border:solid 2px #2da8db;
+        padding:6px 22px;
+        .texto-openSans;
+        background-color: transparent;
+        font-size: 1.5em;
+        margin: 0 10px 8px 0;
+        font-weight: 700;  
+        width: 240px;      
+        color: #2da8db;
+        display: block;
+    }    
+}
+@media only screen and (min-width: 600px) { 
+    section.newsletter ul li {
+        display: inline-block;
+        vertical-align: bottom;
+        margin:0 0 0 20px;
+    }
+    section.newsletter ul li p {
+        color: #fff;
+        .texto-openSans;
+        font-size: 2em;
+        text-align: right;
+        margin:0 0 10px 0;
+        padding: 0 0 0 0;
+    }
+    section.newsletter ul li input {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px; 
+        border:solid 2px #2da8db;
+        padding:6px 22px;
+        .texto-openSans;
+        background-color: transparent;
+        font-size: 1.5em;
+        margin: 0 10px 0 0;
+        font-weight: 700;        
+        color: #2da8db;
+        width: 150px;
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 768px) {    
+    section.newsletter ul li input {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px; 
+        border:solid 2px #2da8db;
+        padding:6px 22px;
+        .texto-openSans;
+        background-color: transparent;
+        font-size: 1.5em;
+        margin: 0 10px 0 0;
+        font-weight: 700;
+        width: 188px;
+        color: #2da8db;
+    }
+} //col-sm
+@media only screen and (min-width: 992px) {    
+    section.newsletter ul {
+        float: right;
+        list-style: none;
+        margin: 0 20px 0 0;
+        padding: 0;
+    }    
+    section.newsletter ul li header {
+        color: #fff;
+        .texto-montserrat;
+        font-size: 4em;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    section.newsletter ul li p {
+        color: #fff;
+        .texto-openSans;
+        font-size: 2em;
+        text-align: right;
+        margin:0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    section.newsletter ul li input {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px; 
+        border:solid 2px #2da8db;
+        padding:6px 22px;
+        .texto-openSans;
+        background-color: transparent;
+        font-size: 1.5em;
+        margin: 0 10px 0 0;
+        font-weight: 700;
+        width: 188px;
+        color: #2da8db;
+    }
+}
+/*-----------------------------------------------
+	Barra Newsletter - Fim
+-----------------------------------------------*/

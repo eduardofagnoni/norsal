@@ -1,0 +1,105 @@
+
+/*-----------------------------------------------
+	Mapa a norsal a bordo
+-----------------------------------------------*/ 
+section.mapaMarca {
+    background: url(../images/bg-do-mapa.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+@media only screen and (min-width: 320px) {
+    section.mapaMarca p {
+        color:#fff;
+    }
+    section.mapaMarca h3 {
+        .texto-openSans;
+        color:#fff;
+        font-size: 3.2em;
+    }
+    section.mapaMarca .img-mapa {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    section.mapaMarca .img-mapa::after {
+        content: "";
+        clear: both;
+    }
+    section.mapaMarca .malhas-e-vias {
+        margin: 20px 0 0 0;
+        //display: table;
+        width: 100%;
+        //max-width: 80%;
+        //table-layout: fixed;
+        border-spacing: 3px;
+    }
+    section.mapaMarca .malhas-e-vias li {
+        display: block;
+        text-align: left;
+        margin: 0 0 15px 0;
+    }
+    section.mapaMarca .malhas-e-vias li span {
+        display: inline-block;
+        width: 41px;
+        height: 43px;
+    }
+    section.mapaMarca .malhas-e-vias li p {
+        display: inline-block;
+        margin:0 0 0 10px;
+        padding:5px 0 0 0;
+        vertical-align: top;
+        .texto-openSans;
+        color:#fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.9em;
+    }
+    section.mapaMarca .malhas-e-vias li p small {
+        text-transform: none;
+        font-weight: normal;
+    }
+    section.mapaMarca .malhas-e-vias li span.rod {
+        background-image: url(../images/icos/rodovias.png)
+    }
+    section.mapaMarca .malhas-e-vias li span.fer {
+        background-image: url(../images/icos/ferrovias.png)
+    }
+    section.mapaMarca .malhas-e-vias li span.mar {
+        background-image: url(../images/icos/maritimas.png)
+    }
+}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {
+    
+    section.mapaMarca h3 {
+        .texto-openSans;
+        color:#fff;
+        font-size: 4.6em;
+    }    
+    section.mapaMarca .malhas-e-vias {
+        margin: 20px 0 0 0;
+        display: table;
+        width: 100%;
+        //max-width: 80%;
+        table-layout: fixed;
+        border-spacing: 3px;
+    }
+    section.mapaMarca .malhas-e-vias li {
+        display: table-cell;
+        text-align: left;
+    }    
+} //col-sm
+@media only screen and (min-width: 830px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1382px) {}
+
+
+
+
+/*-----------------------------------------------
+	Mapa a norsal a bordo - Final
+-----------------------------------------------*/ 

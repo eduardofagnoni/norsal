@@ -1,0 +1,145 @@
+
+/*-----------------------------------------------
+	Bloco Features
+-----------------------------------------------*/
+div.features {
+    display: block;
+    width: 100%;
+}
+div.features article {
+    display: block;
+    border-top: solid 8px #16598d;
+    padding: 46px 31px 29px 31px;
+    margin:0 0 10px 0;
+}
+div.features figure {
+    position: relative;    
+    display: block;
+    padding: 0 0 0 0;
+    margin:0 0 30px 0;
+    z-index: 1;
+}
+div.features figure p {
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index: 2;
+    font-size: 3.9em;
+    .texto-openSans;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+}
+div.features figure img {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+div.features figure figcaption {
+    font-size: 2em;
+    .texto-openSans;
+    color: #005282;
+    margin: 0 0 20px 0;    
+}
+div.features article:nth-child(1) {background-color:#2d8fdb;}
+div.features article:nth-child(2) {background-color:#2da8db;}
+div.features article:nth-child(3) {background-color:#2dc4db;}
+/*-----------------------------------------------
+	Bloco Features - header e parágrafos
+-----------------------------------------------*/
+div.features article header {
+    .texto-montserrat;
+    font-weight: 700;
+    font-size: 3.7em;
+    text-transform: uppercase;
+    color: #fff;
+    margin:0 0 20px 0;
+
+}
+div.features article p {
+    .texto-openSans;
+    font-size: 2em;
+    color: #fff;
+}
+@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {    
+    div.features {
+        display: table;
+        width: 100%;
+        //max-width: 80%;
+        table-layout: fixed;
+        border-spacing: 3px;
+    }
+    div.features figure figcaption {
+        font-size: 2em;
+        .texto-openSans;
+        color: #005282;
+        margin: 0 0 40px 0;  
+        padding: 0 20px 0 0;  
+    }
+    div.features article {
+        display: table-cell;
+        border-top: solid 8px #16598d;
+        padding: 46px 31px 29px 31px;
+        margin:0 0 0 0;
+    }
+    div.features article header {
+        .texto-montserrat;
+        font-weight: 700;
+        font-size: 3em;
+        text-transform: uppercase;
+        color: #fff;
+        margin:0 0 20px 0;
+    
+    }
+    div.features figure {
+        display: table-cell;
+        padding: 0 0 0 0;
+        margin:0 0 0 0;
+    }
+    div.features figure > button {
+        position: absolute;
+        bottom: 0;
+        margin-top:60px;
+    }
+} 
+@media only screen and (min-width: 992px) {
+    div.features article header {
+        .texto-montserrat;
+        font-weight: 700;
+        font-size: 3.7em;
+        text-transform: uppercase;
+        color: #fff;
+        margin:0 0 20px 0;
+    
+    }
+}
+div.features article.numeros {
+    padding: 46px 31px 80px 31px;
+}
+div.features article.numeros header {
+    .texto-montserrat;
+    font-weight: 300;
+    font-size: 5.9em;
+    text-transform: uppercase;
+    color: #fff;
+    margin:0 0 0 0;
+    vertical-align: text-bottom;
+    text-align: center;
+
+}
+div.features article.numeros header span {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+div.features article.numeros p {
+    text-transform: uppercase;
+    .texto-openSans;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+/*-----------------------------------------------
+	Bloco Features - Fim
+-----------------------------------------------*/

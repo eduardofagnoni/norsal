@@ -1,0 +1,45 @@
+/*-----------------------------------------------
+	Nossas marcas
+-----------------------------------------------*/ 
+ul.nossas-marcas {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 20px;
+}
+ul.nossas-marcas li {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+ul.nossas-marcas li img {
+    max-width: 100%;
+}
+ul.nossas-marcas li::after {
+    content: "";
+    width: 50px;
+    height: 7px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    bottom: -20px;
+    .tempoDeTransicao(0.2s); 
+}
+ul.nossas-marcas li:hover::after {
+    content: "";    
+    background: #dcdcdc;    
+    bottom: -10px;
+    .tempoDeTransicao(0.2s); 
+}
+
+/*-----------------------------------------------
+	Nossas marcas - Fim
+-----------------------------------------------*/ 

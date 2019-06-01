@@ -1,0 +1,190 @@
+/*-----------------------------------------------
+	Nossa história
+-----------------------------------------------*/ 
+section.nossa-historia {
+    background-color: #0b497b;
+    padding: 70px 0;
+    background-image: url(../images/nossa-historia.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+section.nossa-historia header h1 {
+    color: #fff;
+    margin: 0 0 40px 0;
+}
+ol.linha-do-tempo h3 {
+    .texto-montserrat;
+    font-size: 9.6em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #2da8db;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+ol.linha-do-tempo p {
+    .texto-openSans;
+    font-size: 2em;
+    color: #2da8db;
+    font-weight: 700;
+    text-transform: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+ol.linha-do-tempo p + p {
+    color: #fff;
+}
+ol.linha-do-tempo li {
+    width: 100%;
+    margin: 0 0 80px 0;
+    padding: 0 0 0 0;
+    display: block;    
+}
+
+@media only screen and (min-width: 320px) {
+    ol.linha-do-tempo {
+        list-style: none;
+        margin: 0 0 40px 0;
+        padding: 0 0 0 0;
+    }
+}
+@media only screen and (min-width: 480px) {  
+    ol.linha-do-tempo {
+        list-style: none;
+        margin: 0 0 240px 0;
+        padding: 0 0 0 0;
+    }  
+    ol.linha-do-tempo li div.item {
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        border-spacing: 0;
+    }
+    ol.linha-do-tempo li div.item .col {
+        width: 50%;
+        position: relative;
+        display: table-cell;
+    }
+    ol.linha-do-tempo li div.item .col:nth-child(odd) {    
+        text-align: right;
+        vertical-align: top;
+        padding: 0 50px 0 0;
+        margin:0 0 0 0;     
+    }
+    ol.linha-do-tempo li div.item .col:nth-child(odd)::after {
+        content:"";
+        font-size: 10em;
+        display: inline-block;
+        width: 0.4em;
+        box-sizing: content-box;
+        height: 0.4em;
+        border: 0.1em solid #2ecdf5;    
+        border-radius: 0.35em;
+        position: absolute;
+        top:20px;
+        right: -21px;
+        z-index: 3; 
+    }
+    ol.linha-do-tempo li div.item .col:nth-child(even) {    
+        vertical-align: top;
+        text-align: left;
+        position: relative;
+        top:55px;        
+        padding: 0 0 0 50px;
+        border-left: solid 4px #2ecdf5;
+        z-index: 1; 
+        margin:0 0 0 0;   
+    }
+    ol.linha-do-tempo .col .cont {
+        position: relative;
+        top:-55px;
+    }
+
+    /*linha impar - item impar*/
+    ol.linha-do-tempo li:nth-child(odd) > div.item .col:nth-child(odd) {
+        float: left;
+    }
+    /*linha impar - item par*/
+    ol.linha-do-tempo li:nth-child(odd) > div.item .col:nth-child(even) {
+        float: right;
+    }
+    /*linha par - item impar*/
+    ol.linha-do-tempo li:nth-child(even) > div.item .col:nth-child(odd) {
+        float: right;
+    }
+    /*linha par - item par*/
+    ol.linha-do-tempo li:nth-child(even) > div.item .col:nth-child(even) {
+        float: left;    
+    }
+
+
+    /* conjunto linha PAR - item IMPAR */
+    ol.linha-do-tempo li:nth-child(even) > div.item .col:nth-child(odd) {    
+        text-align: left;
+        vertical-align: top;
+        padding: 0 0 0 50px;
+        margin:0 0 0 -4px;     
+    }
+    ol.linha-do-tempo li:nth-child(even) > div.item .col:nth-child(odd)::after {
+        content:""; /*CIRCULO*/
+        //font-size: 10em;
+        display: inline-block;
+        width: 0.4em;
+        box-sizing: content-box;
+        height: 0.4em;
+        border: 0.1em solid #2ecdf5;    
+        border-radius: 0.35em;
+        position: absolute;
+        top:20px;
+        left: -17px;
+        z-index: 3; 
+    }
+    /*conjunto linha PAR - item IMPAR /FINAL */
+
+    /* conjunto linha PAR - item PAR */
+    ol.linha-do-tempo li:nth-child(even) > div.item .col:nth-child(even) {    
+        vertical-align: top;
+        text-align: right;
+        position: relative;
+        top:55px;        
+        padding: 0 50px 0 0;
+        border-right: solid 4px #2ecdf5;
+        border-left: none;
+        z-index: 1; 
+        margin:0 0 0 4px;   
+    }
+    /* conjunto linha PAR - item PAR /FINAL */
+}
+@media only screen and (min-width: 600px) {    
+}
+@media only screen and (min-width: 768px) {
+    ol.linha-do-tempo {
+        list-style: none;
+        margin: 0 0 340px 0;
+        padding: 0 0 0 0;
+    } 
+} //col-sm
+@media only screen and (min-width: 830px) {}
+@media only screen and (min-width: 992px) {
+    ol.linha-do-tempo {
+        list-style: none;
+        margin: 0 0 440px 0;
+        padding: 0 0 0 0;
+    } 
+}
+@media only screen and (min-width: 1300px) {
+    ol.linha-do-tempo {
+        list-style: none;
+        margin: 0 0 640px 0;
+        padding: 0 0 0 0;
+    } 
+}
+/*-----------------------------------------------
+	Nossa história - Fim
+-----------------------------------------------*/ 
