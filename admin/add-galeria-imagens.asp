@@ -1,6 +1,10 @@
 <%@LANGUAGE="VBSCRIPT"%>
 <!-- #include file="_classes/__cl__conexao.asp" -->
 <%
+Dim oValida
+Set oValida = New ValidaSessao
+oValida.validaPagina("Norsal_ADM_logado")
+
 Dim oUsuario
 Set oUsuario = New Conexao
 oUsuario.AbreConexao()

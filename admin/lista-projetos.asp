@@ -2,6 +2,9 @@
 <!-- #include file="_classes/__cl__conexao.asp" -->
 <!-- #include file="_limpa-base-de-dados.asp" -->
 <%
+Dim oValida
+Set oValida = New ValidaSessao
+oValida.validaPagina("Norsal_ADM_logado")
 
 Dim oComContaItens
 Set oComContaItens = New Conexao

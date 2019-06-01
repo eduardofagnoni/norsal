@@ -32,9 +32,7 @@ montaObjeto(idDaGaleria)
 
 	</head>
 
-    <body id="CID<%=idDaGaleria%>">
-
-        
+    <body id="CID<%=idDaGaleria%>">        
 
         <!-- Bootstrap -->
 		<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -43,10 +41,6 @@ montaObjeto(idDaGaleria)
         $('.carousel').carousel({
             interval: 2000
         })
-
-
-
-
 
         </script>
 
