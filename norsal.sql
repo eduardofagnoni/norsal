@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50508
 File Encoding         : 65001
 
-Date: 2019-06-01 15:20:50
+Date: 2019-06-02 14:17:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,7 +28,7 @@ CREATE TABLE `_dev_galeriadeimagensarquivo` (
   `dadosIniciais` text,
   `ultimaAlteracao` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of _dev_galeriadeimagensarquivo
@@ -49,6 +49,14 @@ INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('25', '2', 'nat6(1).jpg', 's'
 INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('26', '2', 'nat7(1).jpg', 's', null, '31/05/2019 15:43:57 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '31/05/2019 15:43:57 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
 INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('27', '2', 'nat8(1).jpg', 's', null, '31/05/2019 15:44:07 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '31/05/2019 15:44:07 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
 INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('28', '2', 'nat9(1).jpg', 's', null, '31/05/2019 15:44:13 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '31/05/2019 15:44:13 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('29', '3', 'na8.jpg', 's', null, '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('30', '3', 'nat1(1).jpg', 's', null, '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('31', '3', 'nat2.jpg', 's', null, '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('32', '3', 'nat3.jpg', 's', null, '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('33', '3', 'nat7.jpg', 's', null, '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('34', '3', 'nat8(1)(1).jpg', 's', null, '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:45 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('35', '3', 'nat8.jpg', 's', null, '02/06/2019 12:13:46 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:46 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensarquivo` VALUES ('36', '3', 'nat9.jpg', 's', null, '02/06/2019 12:13:46 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:46 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
 
 -- ----------------------------
 -- Table structure for `_dev_galeriadeimagensnome`
@@ -61,13 +69,14 @@ CREATE TABLE `_dev_galeriadeimagensnome` (
   `dadosIniciais` text,
   `ultimaAlteracao` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of _dev_galeriadeimagensnome
 -- ----------------------------
 INSERT INTO `_dev_galeriadeimagensnome` VALUES ('1', 'Galeria nÃºmero 1', 's', '30/05/2019 19:26:34 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '30/05/2019 19:26:34 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
 INSERT INTO `_dev_galeriadeimagensnome` VALUES ('2', 'Galeria nÃºmero dois', 's', '30/05/2019 20:06:55 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '30/05/2019 20:06:55 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_galeriadeimagensnome` VALUES ('3', 'Galeria projeto gatos', 's', '02/06/2019 12:13:22 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST', '02/06/2019 12:13:22 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
 
 -- ----------------------------
 -- Table structure for `_dev_log`
@@ -84,6 +93,25 @@ CREATE TABLE `_dev_log` (
 -- ----------------------------
 -- Records of _dev_log
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for `_dev_marcas`
+-- ----------------------------
+DROP TABLE IF EXISTS `_dev_marcas`;
+CREATE TABLE `_dev_marcas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of _dev_marcas
+-- ----------------------------
+INSERT INTO `_dev_marcas` VALUES ('1', 'Norsal');
+INSERT INTO `_dev_marcas` VALUES ('2', 'Sal Lebre');
+INSERT INTO `_dev_marcas` VALUES ('3', 'Miramar');
+INSERT INTO `_dev_marcas` VALUES ('4', 'Almirante');
+INSERT INTO `_dev_marcas` VALUES ('5', 'Sal Pirâmide');
 
 -- ----------------------------
 -- Table structure for `_dev_mensagens_do_sistema`
@@ -118,16 +146,48 @@ INSERT INTO `_dev_mensagens_do_sistema` VALUES ('16', '444', 'A nova senha e sua
 INSERT INTO `_dev_mensagens_do_sistema` VALUES ('17', '555', 'Sua senha foi alterada corretamente.');
 
 -- ----------------------------
+-- Table structure for `_dev_produtos`
+-- ----------------------------
+DROP TABLE IF EXISTS `_dev_produtos`;
+CREATE TABLE `_dev_produtos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idSegmento` int(11) DEFAULT NULL,
+  `idMarca` int(11) DEFAULT NULL,
+  `foto` varchar(255) DEFAULT NULL,
+  `nome` varchar(255) DEFAULT NULL,
+  `nome_eng` varchar(255) DEFAULT NULL,
+  `resumo` text,
+  `resumo_eng` text,
+  `texto` longtext,
+  `texto_eng` longtext,
+  `data` date DEFAULT NULL,
+  `userIdSession` int(11) DEFAULT NULL,
+  `registroIncluido` varchar(1) DEFAULT 'n',
+  `regIniciado` varchar(1) DEFAULT 's',
+  `regTerminado` varchar(1) DEFAULT 'n',
+  `ativo` varchar(1) DEFAULT 's',
+  `ultimaAlteracao` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of _dev_produtos
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `_dev_projetos`
 -- ----------------------------
 DROP TABLE IF EXISTS `_dev_projetos`;
 CREATE TABLE `_dev_projetos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
+  `nome_eng` varchar(255) DEFAULT NULL,
   `fotoCapa` varchar(255) DEFAULT NULL,
   `fotoTopoPagina` varchar(255) DEFAULT NULL,
   `resumo` text,
+  `resumo_eng` text,
   `texto` longtext,
+  `texto_eng` longtext,
   `data` date DEFAULT NULL,
   `dataProjeto` date DEFAULT NULL,
   `userIdSession` int(11) DEFAULT NULL,
@@ -137,13 +197,32 @@ CREATE TABLE `_dev_projetos` (
   `ativo` varchar(1) DEFAULT 's',
   `ultimaAlteracao` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of _dev_projetos
 -- ----------------------------
-INSERT INTO `_dev_projetos` VALUES ('29', 'Projeto adote um gatinho', 'nat10(2).jpg', 'nat3(1).jpg', 'Resumo dos trabalhos com acentuaÃ§Ã£o', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis dolor. Sed diam elit, consequat vitae lacus sit amet, ultrices faucibus purus. Sed a pretium arcu. Proin dictum non leo quis pretium. Nulla tincidunt viverra diam id posuere. Fusce aliquet pretium elit sit amet tempor. Morbi lacinia velit eu urna egestas ultrices. Suspendisse egestas diam vel porta consectetur. Proin metus metus, consectetur nec condimentum sit amet, gravida at felis. Phasellus quis nisi ut mi fringilla scelerisque eget sed dui. Fusce metus nunc, tempus ut magna quis, aliquam fringilla ipsum. Nam enim libero, gravida sit amet nibh quis, imperdiet volutpat arcu. Donec fermentum ipsum id semper viverra. Nullam sit amet arcu id quam varius ornare. Vivamus pharetra quam quis massa ultrices, id ullamcorper tellus facilisis.</p>\r\n\r\n<p>Sed vitae vulputate turpis, sed semper enim. In aliquet elementum magna non accumsan. Donec dignissim maximus nibh nec placerat. Etiam vitae elementum nibh. Phasellus nec sapien elementum tellus pretium tincidunt. Duis vitae tortor consectetur, pellentesque lacus quis, fermentum risus. Aliquam a pellentesque odio. Fusce augue justo, elementum sed vehicula eget, blandit eu metus. Praesent maximus velit eget odio euismod tristique. Etiam consectetur suscipit dui at laoreet. Quisque fringilla laoreet leo, nec molestie dui posuere ut. Maecenas ut finibus justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis est nibh, consequat a lacus et, ullamcorper porta ex. Donec eget efficitur nibh. Donec placerat, turpis eget faucibus viverra, nunc lectus mollis felis, id lobortis dui enim eget nisi.</p>\r\n\r\n<p>Nam eleifend ipsum quis orci mollis sodales. Suspendisse auctor, eros ac egestas suscipit, ante leo egestas felis, eu iaculis nisl sem in leo. Nullam commodo massa non lobortis viverra. Sed tempor quis quam in venenatis. Quisque mollis fermentum sapien id accumsan. Suspendisse tempor dolor a semper viverra. In dictum finibus faucibus. Maecenas egestas pretium turpis, ac pharetra diam rhoncus at. Duis at tortor id leo luctus venenatis. Donec eget faucibus massa, id varius risus. Fusce magna sapien, sodales et lorem quis, elementum dignissim lectus. Fusce finibus porttitor magna, in accumsan erat auctor nec. Duis metus ipsum, condimentum et dui sed, tincidunt porta odio. Donec efficitur dolor ut felis venenatis pharetra.</p>\r\n\r\n<p>In vehicula tristique nisi ut rhoncus. Maecenas varius a magna sit amet laoreet. Donec non velit aliquet, viverra nisl eget, luctus leo. Sed gravida rhoncus nulla. Integer luctus turpis a augue imperdiet eleifend. Pellentesque lacus lorem, vulputate vulputate orci et, laoreet suscipit metus. Phasellus eu euismod lorem, ac sollicitudin neque. Cras eu libero interdum, venenatis dolor sit amet, mattis leo.</p>\r\n\r\n<p>Sed ac urna imperdiet, placerat libero ut, pellentesque arcu. Maecenas euismod ut odio nec dapibus. Suspendisse vel eros sit amet ipsum vehicula varius. Aliquam condimentum nunc dolor, vel vulputate ligula viverra at. Cras nec facilisis sapien. Aliquam gravida sapien nulla, quis commodo ante mollis eu. Donec velit sapien, aliquet vel nisi vel, condimentum molestie tellus. Nunc mollis erat metus, vel luctus orci ultricies et. Suspendisse egestas mi sed sem lobortis, vitae feugiat est porta. Donec ac dignissim massa. Donec faucibus lorem vel felis volutpat, nec consectetur purus vestibulum. Suspendisse potenti. Nulla at elit sagittis, fermentum nibh sollicitudin, commodo lectus. Curabitur sed nulla non risus dignissim semper. Praesent posuere magna non viverra fermentum. Pellentesque sed vestibulum est, sit amet fringilla nibh.</p>\r\n', '2019-06-01', '2019-06-01', '1', 's', 's', 's', 's', '01/06/2019 11:07:24 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
-INSERT INTO `_dev_projetos` VALUES ('33', 'Projeto crianÃ§a feliz', 'na8(1).jpg', 'nat1(1).jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis dolor. Sed diam elit, consequat vitae lacus sit amet, ultrices faucibus purus. Sed a pretium arcu. Proin dictum non leo quis pretium. Nulla tincidunt viverra diam id posuere. Fusce aliquet pretium elit sit amet tempor. Morbi lacinia velit eu urna egestas ultrices.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis dolor. Sed diam elit, consequat vitae lacus sit amet, ultrices faucibus purus. Sed a pretium arcu. Proin dictum non leo quis pretium. Nulla tincidunt viverra diam id posuere. Fusce aliquet pretium elit sit amet tempor. Morbi lacinia velit eu urna egestas ultrices. Suspendisse egestas diam vel porta consectetur. Proin metus metus, consectetur nec condimentum sit amet, gravida at felis. Phasellus quis nisi ut mi fringilla scelerisque eget sed dui. Fusce metus nunc, tempus ut magna quis, aliquam fringilla ipsum. Nam enim libero, gravida sit amet nibh quis, imperdiet volutpat arcu. Donec fermentum ipsum id semper viverra. Nullam sit amet arcu id quam varius ornare. Vivamus pharetra quam quis massa ultrices, id ullamcorper tellus facilisis.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><iframe frameborder=\"0\" height=\"100%\" id=\"ID1\" scrolling=\"no\" src=\"_embedGaleria.asp?id=1\" width=\"100%\"></iframe></p>\r\n\r\n<p>Sed vitae vulputate turpis, sed semper enim. In aliquet elementum magna non accumsan. Donec dignissim maximus nibh nec placerat. Etiam vitae elementum nibh. Phasellus nec sapien elementum tellus pretium tincidunt. Duis vitae tortor consectetur, pellentesque lacus quis, fermentum risus. Aliquam a pellentesque odio. Fusce augue justo, elementum sed vehicula eget, blandit eu metus. Praesent maximus velit eget odio euismod tristique. Etiam consectetur suscipit dui at laoreet. Quisque fringilla laoreet leo, nec molestie dui posuere ut. Maecenas ut finibus justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis est nibh, consequat a lacus et, ullamcorper porta ex. Donec eget efficitur nibh. Donec placerat, turpis eget faucibus viverra, nunc lectus mollis felis, id lobortis dui enim eget nisi.</p>\r\n\r\n<p><iframe frameborder=\"0\" height=\"100%\" id=\"ID2\" scrolling=\"no\" src=\"_embedGaleria.asp?id=2\" width=\"100%\"></iframe></p>\r\n\r\n<p>Nam eleifend ipsum quis orci mollis sodales. Suspendisse auctor, eros ac egestas suscipit, ante leo egestas felis, eu iaculis nisl sem in leo. Nullam commodo massa non lobortis viverra. Sed tempor quis quam in venenatis. Quisque mollis fermentum sapien id accumsan. Suspendisse tempor dolor a semper viverra. In dictum finibus faucibus. Maecenas egestas pretium turpis, ac pharetra diam rhoncus at. Duis at tortor id leo luctus venenatis. Donec eget faucibus massa, id varius risus. Fusce magna sapien, sodales et lorem quis, elementum dignissim lectus. Fusce finibus porttitor magna, in accumsan erat auctor nec. Duis metus ipsum, condimentum et dui sed, tincidunt porta odio. Donec efficitur dolor ut felis venenatis pharetra.</p>\r\n', '2019-06-01', '2019-06-28', '1', 's', 's', 's', 's', '01/06/2019 14:01:36 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_projetos` VALUES ('29', 'Projeto adote um gatinho', 'Tit English', '1488546220_151416_1488813948_noticia_normal(1).jpg', 'nat3(1).jpg', 'Resumo dos trabalhos com acentuaÃ§Ã£o', 'resumo english', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis dolor. Sed diam elit, consequat vitae lacus sit amet, ultrices faucibus purus. Sed a pretium arcu. Proin dictum non leo quis pretium. Nulla tincidunt viverra diam id posuere. Fusce aliquet pretium elit sit amet tempor. Morbi lacinia velit eu urna egestas ultrices. Suspendisse egestas diam vel porta consectetur. Proin metus metus, consectetur nec condimentum sit amet, gravida at felis. Phasellus quis nisi ut mi fringilla scelerisque eget sed dui. Fusce metus nunc, tempus ut magna quis, aliquam fringilla ipsum. Nam enim libero, gravida sit amet nibh quis, imperdiet volutpat arcu. Donec fermentum ipsum id semper viverra. Nullam sit amet arcu id quam varius ornare. Vivamus pharetra quam quis massa ultrices, id ullamcorper tellus facilisis.</p>\r\n\r\n<p>Sed vitae vulputate turpis, sed semper enim. In aliquet elementum magna non accumsan. Donec dignissim maximus nibh nec placerat. Etiam vitae elementum nibh. Phasellus nec sapien elementum tellus pretium tincidunt. Duis vitae tortor consectetur, pellentesque lacus quis, fermentum risus. Aliquam a pellentesque odio. Fusce augue justo, elementum sed vehicula eget, blandit eu metus. Praesent maximus velit eget odio euismod tristique. Etiam consectetur suscipit dui at laoreet. Quisque fringilla laoreet leo, nec molestie dui posuere ut. Maecenas ut finibus justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis est nibh, consequat a lacus et, ullamcorper porta ex. Donec eget efficitur nibh. Donec placerat, turpis eget faucibus viverra, nunc lectus mollis felis, id lobortis dui enim eget nisi.</p>\r\n\r\n<p>Nam eleifend ipsum quis orci mollis sodales. Suspendisse auctor, eros ac egestas suscipit, ante leo egestas felis, eu iaculis nisl sem in leo. Nullam commodo massa non lobortis viverra. Sed tempor quis quam in venenatis. Quisque mollis fermentum sapien id accumsan. Suspendisse tempor dolor a semper viverra. In dictum finibus faucibus. Maecenas egestas pretium turpis, ac pharetra diam rhoncus at. Duis at tortor id leo luctus venenatis. Donec eget faucibus massa, id varius risus. Fusce magna sapien, sodales et lorem quis, elementum dignissim lectus. Fusce finibus porttitor magna, in accumsan erat auctor nec. Duis metus ipsum, condimentum et dui sed, tincidunt porta odio. Donec efficitur dolor ut felis venenatis pharetra.</p>\r\n\r\n<p>In vehicula tristique nisi ut rhoncus. Maecenas varius a magna sit amet laoreet. Donec non velit aliquet, viverra nisl eget, luctus leo. Sed gravida rhoncus nulla. Integer luctus turpis a augue imperdiet eleifend. Pellentesque lacus lorem, vulputate vulputate orci et, laoreet suscipit metus. Phasellus eu euismod lorem, ac sollicitudin neque. Cras eu libero interdum, venenatis dolor sit amet, mattis leo.</p>\r\n\r\n<p>Sed ac urna imperdiet, placerat libero ut, pellentesque arcu. Maecenas euismod ut odio nec dapibus. Suspendisse vel eros sit amet ipsum vehicula varius. Aliquam condimentum nunc dolor, vel vulputate ligula viverra at. Cras nec facilisis sapien. Aliquam gravida sapien nulla, quis commodo ante mollis eu. Donec velit sapien, aliquet vel nisi vel, condimentum molestie tellus. Nunc mollis erat metus, vel luctus orci ultricies et. Suspendisse egestas mi sed sem lobortis, vitae feugiat est porta. Donec ac dignissim massa. Donec faucibus lorem vel felis volutpat, nec consectetur purus vestibulum. Suspendisse potenti. Nulla at elit sagittis, fermentum nibh sollicitudin, commodo lectus. Curabitur sed nulla non risus dignissim semper. Praesent posuere magna non viverra fermentum. Pellentesque sed vestibulum est, sit amet fringilla nibh.</p>\r\n', '<p>text english</p>\r\n', '2019-06-01', '2019-06-01', '1', 's', 's', 's', 's', '02/06/2019 11:25:08 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_projetos` VALUES ('33', 'Projeto crianÃ§a feliz', null, 'na8(1).jpg', 'nat1(1).jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis dolor. Sed diam elit, consequat vitae lacus sit amet, ultrices faucibus purus. Sed a pretium arcu. Proin dictum non leo quis pretium. Nulla tincidunt viverra diam id posuere. Fusce aliquet pretium elit sit amet tempor. Morbi lacinia velit eu urna egestas ultrices.', null, '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis dolor. Sed diam elit, consequat vitae lacus sit amet, ultrices faucibus purus. Sed a pretium arcu. Proin dictum non leo quis pretium. Nulla tincidunt viverra diam id posuere. Fusce aliquet pretium elit sit amet tempor. Morbi lacinia velit eu urna egestas ultrices. Suspendisse egestas diam vel porta consectetur. Proin metus metus, consectetur nec condimentum sit amet, gravida at felis. Phasellus quis nisi ut mi fringilla scelerisque eget sed dui. Fusce metus nunc, tempus ut magna quis, aliquam fringilla ipsum. Nam enim libero, gravida sit amet nibh quis, imperdiet volutpat arcu. Donec fermentum ipsum id semper viverra. Nullam sit amet arcu id quam varius ornare. Vivamus pharetra quam quis massa ultrices, id ullamcorper tellus facilisis.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><iframe frameborder=\"0\" height=\"100%\" id=\"ID1\" scrolling=\"no\" src=\"_embedGaleria.asp?id=1\" width=\"100%\"></iframe></p>\r\n\r\n<p>Sed vitae vulputate turpis, sed semper enim. In aliquet elementum magna non accumsan. Donec dignissim maximus nibh nec placerat. Etiam vitae elementum nibh. Phasellus nec sapien elementum tellus pretium tincidunt. Duis vitae tortor consectetur, pellentesque lacus quis, fermentum risus. Aliquam a pellentesque odio. Fusce augue justo, elementum sed vehicula eget, blandit eu metus. Praesent maximus velit eget odio euismod tristique. Etiam consectetur suscipit dui at laoreet. Quisque fringilla laoreet leo, nec molestie dui posuere ut. Maecenas ut finibus justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis est nibh, consequat a lacus et, ullamcorper porta ex. Donec eget efficitur nibh. Donec placerat, turpis eget faucibus viverra, nunc lectus mollis felis, id lobortis dui enim eget nisi.</p>\r\n\r\n<p><iframe frameborder=\"0\" height=\"100%\" id=\"ID2\" scrolling=\"no\" src=\"_embedGaleria.asp?id=2\" width=\"100%\"></iframe></p>\r\n\r\n<p>Nam eleifend ipsum quis orci mollis sodales. Suspendisse auctor, eros ac egestas suscipit, ante leo egestas felis, eu iaculis nisl sem in leo. Nullam commodo massa non lobortis viverra. Sed tempor quis quam in venenatis. Quisque mollis fermentum sapien id accumsan. Suspendisse tempor dolor a semper viverra. In dictum finibus faucibus. Maecenas egestas pretium turpis, ac pharetra diam rhoncus at. Duis at tortor id leo luctus venenatis. Donec eget faucibus massa, id varius risus. Fusce magna sapien, sodales et lorem quis, elementum dignissim lectus. Fusce finibus porttitor magna, in accumsan erat auctor nec. Duis metus ipsum, condimentum et dui sed, tincidunt porta odio. Donec efficitur dolor ut felis venenatis pharetra.</p>\r\n', null, '2019-06-01', '2019-06-28', '1', 's', 's', 's', 's', '01/06/2019 14:01:36 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_projetos` VALUES ('34', 'Mais um projeto', null, 'nat3(3).jpg', 'nat3(5).jpg', 'resumo', null, '<p>texto</p>\r\n', null, '2019-06-02', '2019-06-11', '1', 's', 's', 's', 's', '02/06/2019 10:50:01 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+INSERT INTO `_dev_projetos` VALUES ('36', 'tit pt', '', 'nat2(1).jpg', 'nat2(3).jpg', 'resumo pt', '', '<p>textp pt</p>\r\n', '', '2019-06-02', '2019-06-13', '1', 's', 's', 's', 's', '02/06/2019 11:39:42 - IP:::1:80 - Dom. Acesso:localhost - Metodo:POST');
+
+-- ----------------------------
+-- Table structure for `_dev_segmentos`
+-- ----------------------------
+DROP TABLE IF EXISTS `_dev_segmentos`;
+CREATE TABLE `_dev_segmentos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of _dev_segmentos
+-- ----------------------------
+INSERT INTO `_dev_segmentos` VALUES ('1', 'Consumidor');
+INSERT INTO `_dev_segmentos` VALUES ('2', 'Indústria');
+INSERT INTO `_dev_segmentos` VALUES ('3', 'Pecuária');
 
 -- ----------------------------
 -- Table structure for `_dev_usuarios`
