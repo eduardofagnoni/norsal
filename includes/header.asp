@@ -28,6 +28,7 @@ end if
                                 <option Value="_en" <%=posicaoSelectLang%> >Inglês</option>
                             </select>
                             <input type="hidden" id="nomeDaPagina" name="nomeDaPagina" value="<%=nomepagina%>">
+                            <input type="hidden" id="idRecForm" name="idRecForm" value="<%=id%>">
                         </form>
                     </li>
                     <li><a href="default.asp"><% response.Write traduzir("linkHome") %></a></li>

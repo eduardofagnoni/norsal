@@ -37,8 +37,11 @@ ultima_alteracao = cadastro_dados_iniciais
 
 'varíaveis do formulário
 varNome = SafeSQL(request.form("txtNome"))
+varNomeEng = SafeSQL(request.form("txtNome_eng"))
 varResumo = SafeSQL(request.form("txtResumo"))
+varResumoEng = SafeSQL(request.form("txtResumo_eng"))
 varTexto = SafeSQL_HTML(request.form("txtTextoProjeto"))
+varTextoEng = SafeSQL_HTML(request.form("txtTextoProjeto_eng"))
 varDataProjeto = SafeSQL(request.form("txtDataProjeto"))
 varRegistroIncluido = "s"
 varRegistroTerminado = "s"
@@ -56,7 +59,7 @@ if varDataProjeto<>"" then
 end if
 
 
-oConexaoAdd.UpdateItem("UPDATE "&oConexaoAdd.prefixoTabela&"projetos SET nome='"&varNome&"',resumo='"&varResumo&"',texto='"&varTexto&"',dataProjeto='"&varDataProjeto&"',registroIncluido='"&varRegistroIncluido&"',regTerminado='"&varRegistroTerminado&"',ultimaAlteracao='"&ultima_alteracao&"' WHERE id="&varIdProjeto)
+oConexaoAdd.UpdateItem("UPDATE "&oConexaoAdd.prefixoTabela&"projetos SET nome='"&varNome&"',nome_eng='"&varNomeEng&"',resumo='"&varResumo&"',resumo_eng='"&varResumoEng&"',texto='"&varTexto&"',texto_eng='"&varTextoEng&"',dataProjeto='"&varDataProjeto&"',registroIncluido='"&varRegistroIncluido&"',regTerminado='"&varRegistroTerminado&"',ultimaAlteracao='"&ultima_alteracao&"' WHERE id="&varIdProjeto)
 
 response.redirect("lista-projetos.asp?msg_sys=42")
 %>

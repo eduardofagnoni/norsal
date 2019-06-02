@@ -57,11 +57,11 @@ end if
 
 if regIniciado="s" then
     'Abre projeto para edição
-    oEditRegistro.AbreTabela("SELECT id,nome,fotoCapa,fotoTopoPagina,resumo,texto,dataProjeto FROM "&oEditRegistro.prefixoTabela&"projetos WHERE ativo='s' AND id="&id)
+    oEditRegistro.AbreTabela("SELECT id,nome,nome_eng,fotoCapa,fotoTopoPagina,resumo,resumo_eng,texto,texto_eng,dataProjeto FROM "&oEditRegistro.prefixoTabela&"projetos WHERE ativo='s' AND id="&id)
 else
     'inclui o próximo registro e prepara o mesmo para edição.
     oAddRegistro.AddItem("INSERT INTO "&oAddRegistro.prefixoTabela&"projetos (data, userIdSession, ultimaAlteracao) values ('"&dataInclusao&"','"&idUser&"','"&ultima_alteracao&"')")
-    oEditRegistro.AbreTabela("SELECT id,nome,fotoCapa,fotoTopoPagina,resumo,texto,dataProjeto FROM "&oEditRegistro.prefixoTabela&"projetos WHERE ativo='s' AND userIdSession="&idUser&" AND registroIncluido='n' ORDER BY id DESC")
+    oEditRegistro.AbreTabela("SELECT id,nome,nome_eng,fotoCapa,fotoTopoPagina,resumo,resumo_eng,texto,texto_eng,dataProjeto FROM "&oEditRegistro.prefixoTabela&"projetos WHERE ativo='s' AND userIdSession="&idUser&" AND registroIncluido='n' ORDER BY id DESC")
     response.redirect("add-projetos.asp?regIni=s&id="&oEditRegistro.rs("id"))
 end if
 
@@ -145,13 +145,7 @@ end if
                         <div class="box-body">
                             <form class="form-horizontal form-label-left input_mask" method="post" action="gravar-projetos.asp">
 
-                                <div class="row">                
-                                    <div class="col-xs-12 col-md-8">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="txtNome">Título do projeto</label>
-                                            <input type="text" class="form-control" id="txtNome" name="txtNome" placeholder="Título do projeto" value="<%=oEditRegistro.rs("nome")%>" required>
-                                        </div>
-                                    </div>
+                                <div class="row">
                                     <div class="col-xs-12 col-md-4">
                                         <div class="form-group">
                                             <label class="sr-only" for="txtDataProjeto">Data</label>
@@ -165,52 +159,168 @@ end if
                                     </div>
                                 </div>
 
-                                <div class="row">                
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="txtResumo">Resumo</label>
-                                            <textarea class="form-control" id="txtResumo" name="txtResumo" placeholder="Resumo" required style="resize:vertical"><%=oEditRegistro.rs("resumo")%></textarea>
+                                <div>
+
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Português</a></li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Inglês</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-body">
+                                                    
+                                                    <!-- Inclusão em português -->
+                                                    <div class="row">                
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="txtNome">Título do projeto</label>
+                                                                <input type="text" class="form-control" id="txtNome" name="txtNome" placeholder="Título do projeto" value="<%=oEditRegistro.rs("nome")%>" required>
+                                                            </div>
+                                                        </div>                                    
+                                                    </div>
+
+                                                    <div class="row">                
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="txtResumo">Resumo</label>
+                                                                <textarea class="form-control" id="txtResumo" name="txtResumo" placeholder="Resumo" required style="resize:vertical"><%=oEditRegistro.rs("resumo")%></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+
+                                                            <div class="form-group">	      
+                                                                <label class="sr-only" for="txtTextoProjeto">Texto</label>
+                                                                <textarea name="txtTextoProjeto" id="txtTextoProjeto" class="form-control" placeholder="Texto"><%=oEditRegistro.rs("texto")%></textarea>
+                                                                <script type="text/javascript">
+                                                                    CKEDITOR.replace( "txtTextoProjeto", { 
+
+                                                                        // Define the toolbar groups as it is a more accessible solution.
+                                                                        toolbarGroups: [									
+                                                                            {"name":"basicstyles","groups":["basicstyles"]},
+                                                                            {"name":"tools","groups":["tools"]},
+                                                                            {"name":"blocks","groups":["blocks"]},
+                                                                            {"name":"cleanup","groups":["cleanup"]},
+                                                                            {"name":"list","groups":["list"]},
+                                                                            {"name":"indent","groups":["indent"]},
+                                                                            {"name":"undo","groups":["undo"]},
+                                                                            {"name":"spellchecker","groups":["spellchecker"]},
+                                                                            {"name":"clipboard","groups":["clipboard"]},
+                                                                            {"name":"basicstyles","groups":["basicstyles"]},
+                                                                            {"name":"links","groups":["links"]},
+                                                                            {"name":"paragraph","groups":["list","blocks"]},
+                                                                            {"name":"document","groups":["mode"]},
+                                                                            {"name":"insert","groups":["insert"]},
+                                                                            {"name":"styles","groups":["styles"]},
+                                                                            {"name":"about","groups":["about"]}
+                                                                        ],
+                                                                        // Remove the redundant buttons from toolbar groups defined above.
+                                                                        //removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
+
+                                                                        });
+                                                                </script>
+                                                            </div>
+
+                                                        </div>                        
+                                                    </div>
+                                                    <!-- Inclusão em português - Fim -->
+
+                                                </div>                                            
+                                            </div>
+                                        
+                                        
+                                            
+                                        
+                                        
+                                        
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="profile">
+                                        
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-body">
+                                                    
+                                                        <!-- Inclusão em inglês -->
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="sr-only" for="txtNome_eng">Project title</label>
+                                                                    <input type="text" class="form-control" id="txtNome_eng" name="txtNome_eng" placeholder="Project title" value="<%=oEditRegistro.rs("nome_eng")%>" >
+                                                                </div>
+                                                            </div>                                    
+                                                        </div>
+
+                                                        <div class="row">                
+                                                            <div class="col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="sr-only" for="txtResumo_eng">Summary</label>
+                                                                    <textarea class="form-control" id="txtResumo_eng" name="txtResumo_eng" placeholder="Summary"  style="resize:vertical"><%=oEditRegistro.rs("resumo_eng")%></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+
+                                                                <div class="form-group">	      
+                                                                    <label class="sr-only" for="txtTextoProjeto_eng">Text</label>
+                                                                    <textarea name="txtTextoProjeto_eng" id="txtTextoProjeto_eng" class="form-control" placeholder="Texto"><%=oEditRegistro.rs("texto_eng")%></textarea>
+                                                                    <script type="text/javascript">
+                                                                        CKEDITOR.replace( "txtTextoProjeto_eng", { 
+
+                                                                            // Define the toolbar groups as it is a more accessible solution.
+                                                                            toolbarGroups: [									
+                                                                                {"name":"basicstyles","groups":["basicstyles"]},
+                                                                                {"name":"tools","groups":["tools"]},
+                                                                                {"name":"blocks","groups":["blocks"]},
+                                                                                {"name":"cleanup","groups":["cleanup"]},
+                                                                                {"name":"list","groups":["list"]},
+                                                                                {"name":"indent","groups":["indent"]},
+                                                                                {"name":"undo","groups":["undo"]},
+                                                                                {"name":"spellchecker","groups":["spellchecker"]},
+                                                                                {"name":"clipboard","groups":["clipboard"]},
+                                                                                {"name":"basicstyles","groups":["basicstyles"]},
+                                                                                {"name":"links","groups":["links"]},
+                                                                                {"name":"paragraph","groups":["list","blocks"]},
+                                                                                {"name":"document","groups":["mode"]},
+                                                                                {"name":"insert","groups":["insert"]},
+                                                                                {"name":"styles","groups":["styles"]},
+                                                                                {"name":"about","groups":["about"]}
+                                                                            ],
+                                                                            // Remove the redundant buttons from toolbar groups defined above.
+                                                                            //removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
+
+                                                                            });
+                                                                    </script>
+                                                                </div>
+
+                                                            </div>                        
+                                                        </div>
+                                                        <!-- Inclusão em inglês - Fim -->
+                                                    
+                                                </div>                                            
+                                            </div>
+
+                                            
+
+
+
+
                                         </div>
                                     </div>
+
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-xs-12">
 
-                                        <div class="form-group">	      
-                                            <label class="sr-only" for="txtTextoProjeto">Texto</label>
-                                            <textarea name="txtTextoProjeto" id="txtTextoProjeto" class="form-control" placeholder="Texto"><%=oEditRegistro.rs("texto")%></textarea>
-                                            <script type="text/javascript">
-                                                CKEDITOR.replace( "txtTextoProjeto", { 
 
-                                                    // Define the toolbar groups as it is a more accessible solution.
-                                                    toolbarGroups: [									
-                                                        {"name":"basicstyles","groups":["basicstyles"]},
-                                                        {"name":"tools","groups":["tools"]},
-                                                        {"name":"blocks","groups":["blocks"]},
-                                                        {"name":"cleanup","groups":["cleanup"]},
-                                                        {"name":"list","groups":["list"]},
-                                                        {"name":"indent","groups":["indent"]},
-                                                        {"name":"undo","groups":["undo"]},
-                                                        {"name":"spellchecker","groups":["spellchecker"]},
-                                                        {"name":"clipboard","groups":["clipboard"]},
-                                                        {"name":"basicstyles","groups":["basicstyles"]},
-                                                        {"name":"links","groups":["links"]},
-                                                        {"name":"paragraph","groups":["list","blocks"]},
-                                                        {"name":"document","groups":["mode"]},
-                                                        {"name":"insert","groups":["insert"]},
-                                                        {"name":"styles","groups":["styles"]},
-                                                        {"name":"about","groups":["about"]}
-                                                    ],
-                                                    // Remove the redundant buttons from toolbar groups defined above.
-                                                    //removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
-
-                                                    });
-                                            </script>
-                                        </div>
-
-                                    </div>                        
-                                </div>
+                                
 
                                 
                                 <input type="hidden" name="idProjeto" id="idProjeto" value="<%=oEditRegistro.rs("id")%>">                                

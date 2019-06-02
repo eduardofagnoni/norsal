@@ -80,6 +80,9 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 /*-----------------------------------------------
 	Interna de responsabilidade
 -----------------------------------------------*/
+section.pag-int-resp aside {
+	overflow: hidden;
+}
 section.pag-int-resp h3 {
 	font-size: 5.9em;
 	text-transform: uppercase;
@@ -139,7 +142,28 @@ section.pag-int-resp ol {
 }
 section.pag-int-resp ol li {
 	margin-bottom: 30px;
+	cursor: pointer;
 }
+
+section.pag-int-resp ol li small {
+	position: relative;
+}
+section.pag-int-resp ol li small::after {
+	content:"";
+	display: block;
+	width: 0;
+	height: 5px;
+	background:#37b8ef;
+	position: absolute;
+	left: 70px;
+	top:5px;
+	.tempoDeTransicao(0.2s); 
+}
+section.pag-int-resp ol li:hover > small::after {
+	width: 100%;
+	.tempoDeTransicao(0.2s); 
+}
+
 section.pag-int-resp ol li h5 {
 	font-size: 3em;
 	.texto-openSans;

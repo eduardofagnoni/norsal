@@ -46,7 +46,7 @@
         Dim oListaProjeto
         Set oListaProjeto = New Conexao
         oListaProjeto.AbreConexao()
-        oListaProjeto.AbreTabela("select id,nome,fotoCapa,resumo from "&oListaProjeto.prefixoTabela&"projetos where ativo='s' AND regTerminado='s' order by nome asc")
+        oListaProjeto.AbreTabela("select id,nome,nome_eng,fotoCapa,resumo,resumo_eng from "&oListaProjeto.prefixoTabela&"projetos where ativo='s' AND regTerminado='s' order by nome asc")
         %>
         
         <section class="nossos-projetos">
@@ -58,10 +58,10 @@
                     %>
                     <li class="item" onclick="location.href='_trata-URL.asp?destino=responsabilidade-interna.asp&idProjeto=<%=oListaProjeto.rs("id")%>'">
                         <figure>
-                            <img src="<%=oListaProjeto.enderecoProjetos%><%=oListaProjeto.rs("fotoCapa")%>" alt="<%=oListaProjeto.rs("nome")%>">
+                            <img src="<%=oListaProjeto.enderecoProjetos%><%=oListaProjeto.rs("fotoCapa")%>" alt="<%=oListaProjeto.rs("nome"&sufixo_lang)%>">
                         </figure>                
-                        <h3><%=oListaProjeto.rs("nome")%></h3>
-                        <p><%=oListaProjeto.rs("resumo")%></p>
+                        <h3><%=oListaProjeto.rs("nome"&sufixo_lang)%></h3>
+                        <p><%=oListaProjeto.rs("resumo"&sufixo_lang)%></p>
                     </li>
 
                     <%

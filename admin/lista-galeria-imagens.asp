@@ -22,9 +22,8 @@ Set oListaGaleriaImagens = New Conexao
 oListaGaleriaImagens.AbreConexao()
 oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.prefixoTabela&"galeriadeimagensnome where ativo='s' order by nome asc")
 
-
-
 %>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
@@ -75,6 +74,14 @@ oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.pref
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Galerias</h3>
+
+                        <div style="float:right;">
+                            <a href="add-galeria-imagens.asp" class="btnExtBt btAzul" style="display:block">                                    
+                                <div class="bg2"><img src="images/btGeralBr.png" alt=""></div>
+                                Incluir nova
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
                     
                     <div class="box-body">

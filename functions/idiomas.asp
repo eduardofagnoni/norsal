@@ -1,5 +1,13 @@
 <%
 
+'Para os registros vindos da base de dados atribuir i sufixo da linguagem
+if Session("linguagem") = "_en" then
+    sufixo_lang = "_eng"
+else
+    sufixo_lang = ""
+end if
+' //Para os registros vindos da base de dados atribuir i sufixo da linguagem
+
 
 
 Function traduzir(ByVal strHTML)

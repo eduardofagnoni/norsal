@@ -14,13 +14,14 @@ Function SafeSQL(sInput)
     SafeSQL = TempString
 End function
 
-id = SafeSQL(request.Form("id"))
+id = SafeSQL(request("id"))
 
 
 Dim oListaProjeto
 Set oListaProjeto = New Conexao
 oListaProjeto.AbreConexao()
-oListaProjeto.AbreTabela("select nome,fotoTopoPagina,texto,dataProjeto from "&oListaProjeto.prefixoTabela&"projetos where ativo='s' AND regTerminado='s' AND id="&id)
+oListaProjeto.AbreTabela("select nome,nome_eng,fotoTopoPagina,texto,texto_eng,dataProjeto from "&oListaProjeto.prefixoTabela&"projetos where ativo='s' AND regTerminado='s' AND id="&id)
+
 
 %>
 
@@ -66,11 +67,11 @@ oListaProjeto.AbreTabela("select nome,fotoTopoPagina,texto,dataProjeto from "&oL
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-9">
                         <header>
-                            <h3><%=oListaProjeto.rs("nome")%></h3>
+                            <h3><%=oListaProjeto.rs("nome"&sufixo_lang)%></h3>
                         </header>
                         <small><%=oListaProjeto.rs("dataProjeto")%></small>
-                        <img src="<%=oListaProjeto.enderecoProjetos%><%=oListaProjeto.rs("fotoTopoPagina")%>" alt="<%=oListaProjeto.rs("nome")%>">
-                        <%=oListaProjeto.rs("texto")%>
+                        <img src="<%=oListaProjeto.enderecoProjetos%><%=oListaProjeto.rs("fotoTopoPagina")%>" alt="<%=oListaProjeto.rs("nome"&sufixo_lang)%>">
+                        <%=oListaProjeto.rs("texto"&sufixo_lang)%>
 
                         <div class="clearfix"></div>
                         <div class="compartilhamento">
@@ -78,27 +79,38 @@ oListaProjeto.AbreTabela("select nome,fotoTopoPagina,texto,dataProjeto from "&oL
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3">
-                        <h4><% response.Write traduzir("txtSecton3ResponsabilidadeInternaVisitas") %></h4>
-                        <ol>
-                            <li>
-                            <small>22.07.2019</small>
-                            <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            </li>
-                            <li>
-                            <small>22.07.2019</small>
-                            <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            </li>
-                            <li>
-                            <small>22.07.2019</small>
-                            <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            </li>
-                        </ol>
-                        <div class="ban-promo">
-                            <img src="images/bn-marc.jpg" alt="" >
-                        </div>
+                        <aside>
+                            <h4><% response.Write traduzir("txtSecton3ResponsabilidadeInternaVisitas") %></h4>
+
+                            <%
+                                oListaProjeto.AbreTabela("select id,nome,nome_eng,resumo,resumo_eng,dataProjeto from "&oListaProjeto.prefixoTabela&"projetos where ativo='s' AND regTerminado='s' AND id<>"&id)
+                            %>
+
+                            <ol>
+
+
+                                <%
+                                while not oListaProjeto.rs.eof  
+                                %>
+                                <li onClick="location.href='_trata-URL.asp?destino=responsabilidade-interna.asp&idProjeto=<%=oListaProjeto.rs("id")%>'">
+                                <small><%=oListaProjeto.rs("dataProjeto")%></small>
+                                <h5><%=oListaProjeto.rs("nome"&sufixo_lang)%></h5>
+                                <p><%=oListaProjeto.rs("resumo"&sufixo_lang)%></p>
+                                </li>
+                                <%
+                                oListaProjeto.rs.MoveNext()
+                                wend
+                                oListaProjeto.rs.Close()
+                                set oListaProjeto.rs = nothing
+                                %> 
+
+
+                                
+                            </ol>
+                            <div class="ban-promo">
+                                <img src="images/bn-marc.jpg" alt="" >
+                            </div>
+                        </aside>
                     </div>                    
                 </div> 
                 <div class="row">

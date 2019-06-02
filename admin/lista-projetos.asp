@@ -74,6 +74,14 @@ oListaProjeto.AbreTabela("select id,nome,data from "&oListaProjeto.prefixoTabela
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Projetos</h3>
+
+                        <div style="float:right;">
+                            <a href="add-projetos.asp" class="btnExtBt btAzul" style="display:block">                                    
+                                <div class="bg2"><img src="images/btGeralBr.png" alt=""></div>
+                                Incluir novo
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
                     
                     <div class="box-body">
