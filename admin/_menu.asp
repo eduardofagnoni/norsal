@@ -13,7 +13,19 @@
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="admin.asp"><i class="fa fa-home"></i> <span>Home</span></a></li>
 
-             <li class="treeview">
+            <li class="treeview">
+                <a href="#"><i class="fa fa-cubes"></i> <span>Produtos</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="lista-projetos.asp"><i class="fa fa-list"></i> Lista de Produtos</a></li>
+                    <li><a href="add-projetos.asp"><i class="fa fa-plus-square"></i> Adicionar Produto</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
                 <a href="#"><i class="fa fa-cubes"></i> <span>Projetos</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>

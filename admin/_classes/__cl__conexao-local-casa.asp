@@ -39,7 +39,7 @@ Class Conexao
 
 			nomeDoSistema				=	"Norsal"
 			caminhoInicial				=	"http://localhost/norsal"
-			caminhoFisico				=	"C:\Users\eduardo\OneDrive - Brancozulu Publicidade Comunicacao e educacao ltda\__TrabalhosBrancozulu\23-Norsal\html\norsal\"
+			caminhoFisico				=	"D:\____trabalhos\10_norsal\html\"
 			prefixoTabela				=	"_dev_"
 			emailDuvidasESugestoes		=	""
 			SMTP_envioDeEmailsSistema	=	""
@@ -368,7 +368,7 @@ Class UploadPersists
 	'*************************************************************************
 	'*************************************************************************	
 
-		ComponenteUpload = "Dundas"			'Os componentes podem ser:
+		ComponenteUpload = "Persits"			'Os componentes podem ser:
 												' - Persits
 												' - Dundas
 
