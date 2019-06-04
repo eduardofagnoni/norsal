@@ -40,7 +40,7 @@
                     <div class="col-md-10 col-sm-8 col-xs-12 cont-marca">
                         <p><% response.Write traduzir("txtMarcasNorsal") %></p>
                         
-                        <a href="" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
+                        <a href="produtos.asp?idSegmento=1&idMarca=1" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
                     </div>
                 </div>  
                 <div class="row">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-10 col-sm-8 col-xs-12 cont-marca">
                         <p><% response.Write traduzir("txtMarcasSalLebre") %></p>
-                        <a href="" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
+                        <a href="produtos.asp?idSegmento=1&idMarca=2" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
                     </div>
                 </div>     
                 <div class="row">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-md-10 col-sm-8 col-xs-12 cont-marca">
                         <p><% response.Write traduzir("txtMarcasMiramar") %></p>
-                        <a href="" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
+                        <a href="produtos.asp?idSegmento=1&idMarca=3" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
                     </div>
                 </div>
                 <div class="row">
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-md-10 col-sm-8 col-xs-12 cont-marca">
                         <p><% response.Write traduzir("txtMarcasAlmirante") %></p>
-                        <a href="" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
+                        <a href="produtos.asp?idSegmento=1&idMarca=4" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
                     </div>
                 </div>
                 <div class="row">
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-md-10 col-sm-8 col-xs-12 cont-marca">
                         <p><% response.Write traduzir("txtMarcasSalPiramide") %></p>
-                        <a href="" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
+                        <a href="produtos.asp?idSegmento=1&idMarca=5" class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProdutos") %></a>
                     </div>
                 </div> 
             </div>

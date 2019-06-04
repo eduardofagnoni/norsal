@@ -1614,7 +1614,7 @@ section.lista-de-produtos ul {
   section.lista-de-produtos ul li div {
     display: table-cell;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 50px 0 0 0;
     text-align: left;
   }
   section.lista-de-produtos ul li div h3 {
@@ -1654,7 +1654,7 @@ section.lista-de-produtos ul {
   section.lista-de-produtos ul li div {
     display: table-cell;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 50px 0 0 0;
   }
   section.lista-de-produtos ul li div h3 {
     font-family: 'Open Sans', sans-serif;
@@ -1688,7 +1688,7 @@ section.lista-de-produtos ul {
   section.lista-de-produtos ul li div {
     display: table-cell;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 50px 0 0 0;
   }
   section.lista-de-produtos ul li div h3 {
     font-family: 'Open Sans', sans-serif;
@@ -1722,7 +1722,7 @@ section.lista-de-produtos ul {
   section.lista-de-produtos ul li div {
     display: table-cell;
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 50px 0 0 0;
   }
   section.lista-de-produtos ul li div h3 {
     font-family: 'Open Sans', sans-serif;

@@ -1,7 +1,8 @@
 <!--#include file="functions/idiomas.asp"-->
 <!--#include file="functions/__pega_nome_da_pagina.asp"-->
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,11 +34,11 @@
         <section style="padding-top:40px;padding-bottom:40px;">
             <div class="container">
                 <ul class="nossas-marcas">
-                    <li><img src="images/marcas/norsal.png" alt="Norsal" title=""></li>
-                    <li><img src="images/marcas/sal-lebre.png" alt="Sal Lebre" title=""></li>
-                    <li><img src="images/marcas/miramar.png" alt="Miramar" title=""></li>
-                    <li><img src="images/marcas/almirante.png" alt="Almirante" title=""></li>
-                    <li><img src="images/marcas/sal-piramide.png" alt="Sal Pirâmide" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=1'"><img src="images/marcas/norsal.png" alt="Norsal" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=2'"><img src="images/marcas/sal-lebre.png" alt="Sal Lebre" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=3'"><img src="images/marcas/miramar.png" alt="Miramar" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=4'"><img src="images/marcas/almirante.png" alt="Almirante" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=5'"><img src="images/marcas/sal-piramide.png" alt="Sal Pirâmide" title=""></li>
                 </ul>            
             </div>
         </section>
@@ -87,13 +88,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-12 text-center" style="padding-top:60px">
-                        <img src="images/segmento-consumidor.gif" alt="Consumidor">
+                        <img src="images/segmento-consumidor.gif" style="cursor:pointer" alt="Consumidor" onclick="location.href='produtos.asp?idSegmento=1&idMarca=1'">
                     </div>
                     <div class="col-md-4 col-xs-12 text-center" style="padding-top:60px">
-                        <img src="images/segmento-industria.gif" alt="Indústria">
+                        <img src="images/segmento-industria.gif" style="cursor:pointer" alt="Indústria" onclick="location.href='produtos.asp?idSegmento=2&idMarca=1'">
                     </div>
                     <div class="col-md-4 col-xs-12 text-center" style="padding-top:60px">
-                        <img src="images/segmento-pecuaria.gif" alt="Pecuária">
+                        <img src="images/segmento-pecuaria.gif" style="cursor:pointer" alt="Pecuária" onclick="location.href='produtos.asp?idSegmento=3&idMarca=1'">
                     </div>
                 </div>
             </div>   

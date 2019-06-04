@@ -1,3 +1,59 @@
+<%@LANGUAGE="VBSCRIPT"%>
+<!-- #include file="admin/_classes/__cl__conexao.asp" -->
+
+<!--#include file="functions/__seguranca.asp"-->
+<%
+
+
+idSegmento = int(request("idSegmento"))
+idMarca = int(request("idMarca"))
+
+
+if session("Norsal_IdSegmento") < 1 or session("Norsal_IdSegmento") = "" then
+    session("Norsal_IdSegmento") = 1
+else
+    if idSegmento<>"" then
+    session("Norsal_IdSegmento") = idSegmento
+    end if
+end if
+
+
+if session("Norsal_IdMarca") < 1 or session("Norsal_IdMarca") = "" then
+    session("Norsal_IdMarca") = 1
+else
+    if idMarca<>"" then
+    session("Norsal_IdMarca") = idMarca
+    end if
+end if
+
+
+Dim oListas
+Set oListas = New Conexao
+oListas.AbreConexao()
+
+Dim oSegmentos
+Set oSegmentos = New Conexao
+oSegmentos.AbreConexao()
+
+Dim oMarcas
+Set oMarcas = New Conexao
+oMarcas.AbreConexao()
+
+
+oSegmentos.AbreTabela("select id,nome,nome_eng from "&oSegmentos.prefixoTabela&"segmentos where ativo='s' order by id asc")
+oMarcas.AbreTabela("select id,foto,nome,nome_eng,texto,texto_eng from "&oMarcas.prefixoTabela&"marcas where ativo='s' order by id asc")
+
+oListas.AbreTabela("select id,idSegmento,idMarca,foto,nome,nome_eng,resumo,resumo_eng,embalagem,embalagem_eng from "&oListas.prefixoTabela&"produtos where ativo='s' AND regTerminado='s' AND idSegmento="&int(session("Norsal_IdSegmento"))&" AND idMarca="&int(session("Norsal_IdMarca"))&" order by nome asc")
+
+%>
+
+
+
+
+
+
+
+
 <!--#include file="functions/idiomas.asp"-->
 <!--#include file="functions/__pega_nome_da_pagina.asp"-->
 <!DOCTYPE html>
@@ -29,13 +85,25 @@
             </header>
         </section>
 
-        <section class="abas-pag-produtos">
+        <section class="abas-pag-produtos" id="segmentos-prod">
             <header>
                 <div class="container">
                     <div class="quadro-abas-pag-produtos">
-                        <div class="aba ativa"><% response.Write traduzir("txtConsumidor") %></div>
-                        <div class="aba"><% response.Write traduzir("txtIndustria") %></div>
-                        <div class="aba"><% response.Write traduzir("txtPecuaria") %></div>
+                        <%
+                            while not oSegmentos.rs.eof
+                            if session("Norsal_IdSegmento")=oSegmentos.rs("id") then
+                                varSegAtiva="ativa"
+                            else 
+                                varSegAtiva=""
+                            end if
+                        %>
+                        <div class="aba <%=varSegAtiva%>" onclick="location.href='produtos.asp?idSegmento=<%=oSegmentos.rs("id")%>&idMarca=<%=session("Norsal_IdMarca")%>#segmentos-prod'"><%=oSegmentos.rs("nome"&sufixo_lang)%></div>
+                        <%
+                            oSegmentos.rs.MoveNext()
+                            wend
+                            oSegmentos.rs.Close()
+                            set oSegmentos.rs = nothing
+                        %>  
                     </div>            
                 </div>
             </header>            
@@ -45,38 +113,72 @@
                 </div>            
             </div>
         </section>
-        <section class="abas-marcas-produtos">
+
+        <section class="abas-marcas-produtos" id="marcas-prod">
             <div class="container">
                 <div class="quadro-abas-marcas-produtos">
-                    <div class="aba ativa"><img src="images/marcas/norsal.png" alt="Norsal"></div>
-                    <div class="aba"><img src="images/marcas/sal-lebre.png" alt="Sal Lebre"></div>
-                    <div class="aba"><img src="images/marcas/miramar.png" alt="Miramar"></div>
-                    <div class="aba"><img src="images/marcas/almirante.png" alt="Almirante"></div>
-                    <div class="aba"><img src="images/marcas/sal-piramide.png" alt="Sal Pirâmide"></div>
+                    <%
+                    while not oMarcas.rs.eof
+                        if session("Norsal_IdMarca")=oMarcas.rs("id") then
+                            varAtiva="ativa"
+                        else 
+                            varAtiva=""
+                        end if
+                    %>
+                    <div class="aba <%=varAtiva%>" onclick="location.href='produtos.asp?idSegmento=<%=session("Norsal_IdSegmento")%>&idMarca=<%=oMarcas.rs("id")%>#segmentos-prod'"><img src="<%=oMarcas.enderecoMarcas%><%=oMarcas.rs("foto")%>" alt="<%=oMarcas.rs("nome"&sufixo_lang)%>" ></div>
+                    <%
+                    oMarcas.rs.MoveNext()
+                    wend
+                    oMarcas.rs.Close()
+                    set oMarcas.rs = nothing
+                    %>  
                 </div>
             </div>
         </section>
 
+
+        <%                
+        oMarcas.AbreTabela("select nome,nome_eng,texto,texto_eng from "&oMarcas.prefixoTabela&"marcas where ativo='s' AND id="&session("Norsal_IdMarca"))
+        %>
         <section class="container textos-laterais" style="padding-top:100px;padding-bottom:80px;">        
             <header class="inline">
-                <h2><% response.Write traduzir("txtSection3ProdutosTit") %></h2>
+                <h2><%=oMarcas.rs("nome"&sufixo_lang)%></h2>
+                
                 <div class="lats">
-                    <p><% response.Write traduzir("txtSection3ProdutosRes") %></p>
+                    <p><%=oMarcas.rs("texto"&sufixo_lang)%></p>
                 </div>
             </header>        
         </section>
 
         <section class="lista-de-produtos">
-            <div class="container">            
+            <div class="container"> 
+
+                <%
+                    if oListas.rs.eof=true then
+                    response.write("<p style='text-align:center;margin-bottom:60px;'>Estamos preparando os produtos dessa área.<br>Consulte novamente mais tarde, ou escreva-nos, clicando no botão abaixo.</p>")
+                    end if
+                %>
+
                 <ul>
+
+                    <%                   
+                    while not oListas.rs.eof
+                    %>
                     <li>
-                        <img src="images/produto-de-marcacao.jpg" alt="" title="">
+                        <img src="<%=oListas.enderecoProdutos%><%=oListas.rs("foto")%>" alt="<%=oListas.rs("nome"&sufixo_lang)%>" >
                         <div>
-                            <h3>Norsal Iodado</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-                            <button class="bt bt-produtos-azul">Embalagem: Pacote de 000g</button> 
+                            <h3><%=oListas.rs("nome"&sufixo_lang)%></h3>
+                            <p><%=oListas.rs("resumo"&sufixo_lang)%></p>
+                            <p><strong><%=oListas.rs("embalagem"&sufixo_lang)%></strong></p>
                         </div>                    
-                    </li>                    
+                    </li>  
+                    <%
+                    oListas.rs.MoveNext()
+                    wend
+                    oListas.rs.Close()
+                    set oListas.rs = nothing
+                    %>  
+
                 </ul>                       
             </div>
         </section>

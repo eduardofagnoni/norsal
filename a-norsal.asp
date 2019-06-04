@@ -297,11 +297,11 @@
                 </header>    
 
                 <ul class="nossas-marcas" style="margin-top:40px;">
-                    <li><img src="images/marcas/norsal.png" alt="Norsal" title=""></li>
-                    <li><img src="images/marcas/sal-lebre.png" alt="Sal Lebre" title=""></li>
-                    <li><img src="images/marcas/miramar.png" alt="Miramar" title=""></li>
-                    <li><img src="images/marcas/almirante.png" alt="Almirante" title=""></li>
-                    <li><img src="images/marcas/sal-piramide.png" alt="Sal Pirâmide" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=1'"><img src="images/marcas/norsal.png" alt="Norsal" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=2'"><img src="images/marcas/sal-lebre.png" alt="Sal Lebre" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=3'"><img src="images/marcas/miramar.png" alt="Miramar" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=4'"><img src="images/marcas/almirante.png" alt="Almirante" title=""></li>
+                    <li onclick="location.href='produtos.asp?idSegmento=1&idMarca=5'"><img src="images/marcas/sal-piramide.png" alt="Sal Pirâmide" title=""></li>
                 </ul> 
             </div>                
         </section>
