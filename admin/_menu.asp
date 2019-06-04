@@ -9,57 +9,31 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">MENU</li>
+
+            
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="admin.asp"><i class="fa fa-home"></i> <span>Home</span></a></li>
 
-            <li class="treeview">
-                <a href="#"><i class="fa fa-cubes"></i> <span>Marcas</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="lista-marcas.asp"><i class="fa fa-list"></i> Lista de Marcas</a></li>
-                    <li><a href="add-marcas.asp"><i class="fa fa-plus-square"></i> Adicionar Marca</a></li>
-                </ul>
-            </li>
+            <!--
+            <li class="header">Marcas</li>
+            <li><a href="lista-marcas.asp"><i class="fa fa-list"></i> Lista de Marcas</a></li>
+            <li><a href="add-marcas.asp"><i class="fa fa-plus-square"></i> Adicionar Marca</a></li>
+            -->
+            
+            <li class="header">Produtos</li>
+            <li><a href="lista-produtos.asp"><i class="fa fa-list"></i> Lista de Produtos</a></li>
+            <li><a href="add-produtos.asp"><i class="fa fa-plus-square"></i> Adicionar Produto</a></li>
 
-            <li class="treeview">
-                <a href="#"><i class="fa fa-cubes"></i> <span>Produtos</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="lista-produtos.asp"><i class="fa fa-list"></i> Lista de Produtos</a></li>
-                    <li><a href="add-produtos.asp"><i class="fa fa-plus-square"></i> Adicionar Produto</a></li>
-                </ul>
-            </li>
+            <li class="header">Projetos</li>
+            <li><a href="lista-projetos.asp"><i class="fa fa-list"></i> Lista de Projetos</a></li>
+            <li><a href="add-projetos.asp"><i class="fa fa-plus-square"></i> Adicionar Projeto</a></li>
 
-            <li class="treeview">
-                <a href="#"><i class="fa fa-cubes"></i> <span>Projetos</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="lista-projetos.asp"><i class="fa fa-list"></i> Lista de Projetos</a></li>
-                    <li><a href="add-projetos.asp"><i class="fa fa-plus-square"></i> Adicionar Projeto</a></li>
-                </ul>
-            </li>
+            <li class="header">Galeria de imagens</li>
+            <li><a href="lista-galeria-imagens.asp"><i class="fa fa-list"></i> Lista de Galerias</a></li>
+            <li><a href="add-galeria-imagens.asp"><i class="fa fa-plus-square"></i> Adicionar Galeria</a></li>
 
-            <li class="treeview">
-                <a href="#"><i class="fa fa-image"></i> <span>Galerias de Imagem</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="lista-galeria-imagens.asp"><i class="fa fa-list"></i> Lista de Galerias</a></li>
-                    <li><a href="add-galeria-imagens.asp"><i class="fa fa-plus-square"></i> Adicionar Galeria</a></li>
-                </ul>
-            </li>
+
+
 
             <!--
             <li class="treeview">

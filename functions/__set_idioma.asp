@@ -14,6 +14,9 @@ linguagem = SafeSQL(request.form("lang"))
 nomedapagina = SafeSQL(request.form("nomeDaPagina"))
 idRecuperadoNoFormulario = SafeSQL(request.form("idRecForm"))
 
+idSegmento = SafeSQL(request.form("idSegmento"))
+idMarca = SafeSQL(request.form("idMarca"))
+
 
 
 if linguagem<>"" then
@@ -26,6 +29,8 @@ end if
 'verifica se o link possui parâmetro ID e faz a atribuição de for o caso.
 if idRecuperadoNoFormulario<>"" then
     response.redirect("../"&nomedapagina&"?id="&idRecuperadoNoFormulario)
+elseif idSegmento<>"" then
+    response.redirect("../"&nomedapagina&"?idSegmento="&idSegmento&"&idMarca="&idMarca)
 else
     response.redirect("../"&nomedapagina)
 end if

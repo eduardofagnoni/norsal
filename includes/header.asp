@@ -41,6 +41,8 @@ end if
                             </select>
                             <input type="hidden" id="nomeDaPagina" name="nomeDaPagina" value="<%=nomepagina%>">
                             <input type="hidden" id="idRecForm" name="idRecForm" value="<%=id%>">
+                            <input type="hidden" id="idSegmento" name="idSegmento" value="<%=session("Norsal_IdSegmento")%>">
+                            <input type="hidden" id="idMarca" name="idMarca" value="<%=session("Norsal_IdMarca")%>">
                         </form>
                     </li>
                     <li><a href="default.asp"><% response.Write traduzir("linkHome") %></a></li>
@@ -63,9 +65,9 @@ end if
                 </ul>
                 <p><% response.Write traduzir("txtNossasMarcas") %></p>
                 <ul>
-                    <li><a href="produtos.asp?idSegmento=1&idMarca=1"><% response.Write traduzir("linkSalLebre") %></a></li>
-                    <li><a href="produtos.asp?idSegmento=1&idMarca=2"><% response.Write traduzir("linkMiramar") %></a></li>
-                    <li><a href="produtos.asp?idSegmento=1&idMarca=3"><% response.Write traduzir("linkNorsal") %></a></li>
+                    <li><a href="produtos.asp?idSegmento=1&idMarca=2"><% response.Write traduzir("linkSalLebre") %></a></li>
+                    <li><a href="produtos.asp?idSegmento=1&idMarca=3"><% response.Write traduzir("linkMiramar") %></a></li>
+                    <li><a href="produtos.asp?idSegmento=1&idMarca=1"><% response.Write traduzir("linkNorsal") %></a></li>
                     <li><a href="produtos.asp?idSegmento=1&idMarca=4"><% response.Write traduzir("linkAlmirante") %></a></li>
                     <li><a href="produtos.asp?idSegmento=1&idMarca=5"><% response.Write traduzir("linkPiramide") %></a></li>
                 </ul>

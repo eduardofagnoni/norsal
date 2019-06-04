@@ -48,7 +48,7 @@
                 <h2><% response.Write traduzir("txtDestaqueSection1Home") %></h2>
                 <div class="lats">
                     <p><% response.Write traduzir("txtApoioSection1Home") %></p><br>
-                    <button class="bt bt-azul-cinza"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoSection1Home") %></button>
+                    <button class="bt bt-azul-cinza" onclick="location.href='marcas.asp'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoSection1Home") %></button>
                 </div>
             </header>        
         </section>
