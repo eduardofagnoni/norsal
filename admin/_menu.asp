@@ -32,8 +32,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="lista-projetos.asp"><i class="fa fa-list"></i> Lista de Produtos</a></li>
-                    <li><a href="add-projetos.asp"><i class="fa fa-plus-square"></i> Adicionar Produto</a></li>
+                    <li><a href="lista-produtos.asp"><i class="fa fa-list"></i> Lista de Produtos</a></li>
+                    <li><a href="add-produtos.asp"><i class="fa fa-plus-square"></i> Adicionar Produto</a></li>
                 </ul>
             </li>
 
