@@ -14,6 +14,18 @@
             <li class="active"><a href="admin.asp"><i class="fa fa-home"></i> <span>Home</span></a></li>
 
             <li class="treeview">
+                <a href="#"><i class="fa fa-cubes"></i> <span>Marcas</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="lista-marcas.asp"><i class="fa fa-list"></i> Lista de Marcas</a></li>
+                    <li><a href="add-marcas.asp"><i class="fa fa-plus-square"></i> Adicionar Marca</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
                 <a href="#"><i class="fa fa-cubes"></i> <span>Produtos</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
