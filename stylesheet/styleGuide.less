@@ -75,151 +75,342 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 @import url("_styleListaDeMarcas.less");
 @import url("_styleNossosProjetos.less");
 @import url("_styleCentrosDeDistribuicao.less");
+@import url("_styleInternaResponsabilidade.less");
+@import url("_styleNovidades.less");
+
+
+
 
 
 /*-----------------------------------------------
-	Interna de responsabilidade
+	Linha de produção
 -----------------------------------------------*/
-section.pag-int-resp aside {
-	overflow: hidden;
+@media only screen and (min-width: 320px) {
+	section#linha-prod-mobile {
+		display: block;
+	}
+	section#linha-prod-desk {
+		display:none;
+	}
 }
-section.pag-int-resp h3 {
-	font-size: 5.9em;
-	text-transform: uppercase;
-	.texto-openSans;
-	color: #212b65;	
-	margin:0;
-	padding:0 0 10px 0;
-}
-section.pag-int-resp small {
-	font-size: 1.8em;
-	color: #37b8ef;
-	.texto-openSans;
-	font-weight: bold;
-	display: block;	
-	position: relative;
-}
-section.pag-int-resp h4 {
-	.texto-montserrat;
-	font-weight: bold;
-	color: #212b65;
-	text-transform: uppercase;
-	padding:10px 0 5px 0;
-	margin: 0 0 30px 0;
-	border-bottom: solid 9px #ececec;
-}
-section.pag-int-resp .ban-promo img {
-	width: 100%;
-}
-section.pag-int-resp header + small {
-	padding-left: 20px;
-	margin-bottom: 20px;
-}
-section.pag-int-resp header + small::before {
-	content: "";
-	width: 13px;
-	height: 13px;
-	display: block;
-	background:#37b8ef;
-	position: absolute;	
-	top:1px;
-	left:0;
-}
-section.pag-int-resp img {
-	width: 100%;
-	margin-bottom: 20px;
-	display: block;
-}
-section.pag-int-resp p {
-	.texto-openSans;
-	font-size: 1.9em;
-	color: #212b65;
-}
-section.pag-int-resp ol {
-	list-style: none;
-	margin:0;
-	padding:0;
-}
-section.pag-int-resp ol li {
-	margin-bottom: 30px;
-	cursor: pointer;
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {} //col-sm
+@media only screen and (min-width: 830px) {}
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1120px) {
+	section#linha-prod-mobile {
+		display: none;
+	}
+	section#linha-prod-desk {
+		display:block;
+	}
+	section.linha-de-producao {
+		position: relative;
+		height: 1400px;
+		display: block;
+		//overflow: hidden;
+	}
+	section.linha-de-producao h5 {
+		.texto-openSans;
+		font-size: 2.1em;
+		color:#2da8db;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin:0;
+		padding: 0;
+	}
+	section.linha-de-producao p {
+		.texto-openSans;
+		font-size: 2.1em;
+		color:#005282;
+		margin:0;
+		padding: 0;
+	}
+	section.linha-de-producao div.itens-da-linha {
+		position: absolute;
+	}
+
+	section.linha-de-producao .foto-extracao-das-aguas {
+		top:47px;
+		left:46px - 90px;
+	}
+	section.linha-de-producao .linha-passo-1-2 {
+		top:200px;
+		left:209px - 90px;
+	}
+	section.linha-de-producao .numero-1 {
+		top:154px;
+		left:194px - 90px;
+	}
+	section.linha-de-producao .texto-extracao-das-aguas {
+		top:81px;
+		left:247px - 90px;
+		width:410px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-transporte-da-agua {
+		top:203px;
+		left:466px - 90px;
+	}
+	section.linha-de-producao .linha-passo-2-3 {
+		top:384px;
+		left:587px - 90px;
+	}
+	section.linha-de-producao .numero-2 {
+		top:359px;
+		left:541px - 90px;
+	}
+	section.linha-de-producao .texto-transporte-da-agua {
+		top:230px;
+		left:660px - 90px;
+		width:410px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-a-evaporacao {
+		top:511px;
+		left:913px - 90px;
+	}
+	section.linha-de-producao .linha-passo-3-4 {
+		top:640px;
+		left:591px - 90px;
+	}
+	section.linha-de-producao .numero-3 {
+		top:591px;
+		left:888px - 90px;
+	}
+	section.linha-de-producao .texto-a-evaporacao {
+		top:511px;
+		left:465px - 90px;
+		width:410px;
+		padding-right: 15px;
+		border-right:solid 5px #006097;
+		text-align: right;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-a-filtragem {
+		top:650px;
+		left:470px - 90px;
+	}
+	section.linha-de-producao .linha-passo-4-5 {
+		top:834px;
+		left:215px - 90px;
+	}
+	section.linha-de-producao .numero-4 {
+		top:815px;
+		left:541px - 90px;
+	}
+	section.linha-de-producao .texto-a-filtragem {
+		top:677px;
+		left:51px - 90px;
+		width:410px;
+		padding-right: 15px;
+		border-right:solid 5px #006097;
+		text-align: right;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-a-cristalizacao {
+		top:959px;
+		left:26px - 90px;
+	}
+	section.linha-de-producao .linha-passo-5-6 {
+		top:1086px;
+		left:211px - 90px;
+	}
+	section.linha-de-producao .numero-5 {
+		top:1037px;
+		left:194px - 90px;
+	}
+	section.linha-de-producao .texto-a-cristalizacao {
+		top:968px;
+		left:251px - 90px;
+		width:410px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-por-fim-a-colheita {
+		top:1092px;
+		left:466px - 90px;
+	}
+	section.linha-de-producao .linha-pontilhada {
+		top:1271px;
+		left:589px - 90px;
+	}
+	section.linha-de-producao .numero-6 {
+		top:1256px;
+		left:541px - 90px;
+	}
+	section.linha-de-producao .texto-por-fim-a-colheita {
+		top:1115px;
+		left:664px - 90px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+
 }
 
-section.pag-int-resp ol li small {
-	position: relative;
-}
-section.pag-int-resp ol li small::after {
-	content:"";
-	display: block;
-	width: 0;
-	height: 5px;
-	background:#37b8ef;
-	position: absolute;
-	left: 70px;
-	top:5px;
-	.tempoDeTransicao(0.2s); 
-}
-section.pag-int-resp ol li:hover > small::after {
-	width: 100%;
-	.tempoDeTransicao(0.2s); 
-}
+@media only screen and (min-width: 1200px) {
+	section#linha-prod-mobile {
+		display: none;
+	}
+	section#linha-prod-desk {
+		display:block;
+	}
+	section.linha-de-producao {
+		position: relative;
+		height: 1400px;
+		display: block;
+		overflow: hidden;
+	}
+	section.linha-de-producao h5 {
+		.texto-openSans;
+		font-size: 2.1em;
+		color:#2da8db;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin:0;
+		padding: 0;
+	}
+	section.linha-de-producao p {
+		.texto-openSans;
+		font-size: 2.1em;
+		color:#005282;
+		margin:0;
+		padding: 0;
+	}
+	section.linha-de-producao div.itens-da-linha {
+		position: absolute;
+	}
 
-section.pag-int-resp ol li h5 {
-	font-size: 3em;
-	.texto-openSans;
-	color: #212b65;
-	margin:0;
-	padding:0;
+	section.linha-de-producao .foto-extracao-das-aguas {
+		top:47px;
+		left:46px;
+	}
+	section.linha-de-producao .linha-passo-1-2 {
+		top:200px;
+		left:209px;
+	}
+	section.linha-de-producao .numero-1 {
+		top:154px;
+		left:194px;
+	}
+	section.linha-de-producao .texto-extracao-das-aguas {
+		top:81px;
+		left:247px;
+		width:410px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-transporte-da-agua {
+		top:203px;
+		left:466px;
+	}
+	section.linha-de-producao .linha-passo-2-3 {
+		top:384px;
+		left:587px;
+	}
+	section.linha-de-producao .numero-2 {
+		top:359px;
+		left:541px;
+	}
+	section.linha-de-producao .texto-transporte-da-agua {
+		top:230px;
+		left:660px;
+		width:410px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-a-evaporacao {
+		top:511px;
+		left:913px;
+	}
+	section.linha-de-producao .linha-passo-3-4 {
+		top:640px;
+		left:591px;
+	}
+	section.linha-de-producao .numero-3 {
+		top:591px;
+		left:888px;
+	}
+	section.linha-de-producao .texto-a-evaporacao {
+		top:511px;
+		left:465px;
+		width:410px;
+		padding-right: 15px;
+		border-right:solid 5px #006097;
+		text-align: right;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-a-filtragem {
+		top:650px;
+		left:470px;
+	}
+	section.linha-de-producao .linha-passo-4-5 {
+		top:834px;
+		left:215px;
+	}
+	section.linha-de-producao .numero-4 {
+		top:815px;
+		left:541px;
+	}
+	section.linha-de-producao .texto-a-filtragem {
+		top:677px;
+		left:51px;
+		width:410px;
+		padding-right: 15px;
+		border-right:solid 5px #006097;
+		text-align: right;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-a-cristalizacao {
+		top:959px;
+		left:26px;
+	}
+	section.linha-de-producao .linha-passo-5-6 {
+		top:1086px;
+		left:211px;
+	}
+	section.linha-de-producao .numero-5 {
+		top:1037px;
+		left:194px;
+	}
+	section.linha-de-producao .texto-a-cristalizacao {
+		top:968px;
+		left:251px;
+		width:410px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+	/*--------------------------------------------------*/
+	section.linha-de-producao .foto-por-fim-a-colheita {
+		top:1092px;
+		left:466px;
+	}
+	section.linha-de-producao .linha-pontilhada {
+		top:1271px;
+		left:589px;
+	}
+	section.linha-de-producao .numero-6 {
+		top:1256px;
+		left:541px;
+	}
+	section.linha-de-producao .texto-por-fim-a-colheita {
+		top:1115px;
+		left:664px;
+		padding-left: 15px;
+		border-left:solid 5px #006097;
+	}
+
 }
-section.pag-int-resp .compartilhamento {
-	margin:30px 0 0 0;
-	border-top:solid 1px #dcdcdc;
-	padding:14px 0 0 0;	
-}
-section.pag-int-resp .compartilhamento p {
-	color: #16598d;
-	.texto-openSans;
-	font-size: 2em;	
-}
-section.pag-int-resp .compartilhamento p a {
-	font-size: 2em;
-	color: #2fb3ed;
-	margin: 0 5px;
-	text-decoration: none;
-	background: transparent;
-	.tempoDeTransicao(0.2s); 
-}
-section.pag-int-resp .compartilhamento p a:hover {
-	color: #16598d;
-	.tempoDeTransicao(0.2s); 
-}
+	
 /*-----------------------------------------------
-	Interna de responsabilidade - Fim
------------------------------------------------*/ 
-
-
-/*-----------------------------------------------
-	Novidades
------------------------------------------------*/
-a.item-pag-novidades {
-	margin-bottom: 40px;
-	display: block;
-	cursor: pointer;
-	.tempoDeTransicao(0.3s); 
-	text-decoration: none;	
-}
-a.item-pag-novidades img {
-	.tempoDeTransicao(0.3s); 	
-}
-a.item-pag-novidades:hover > img {		
-	.tempoDeTransicao(0.3s); 	
-	filter: brightness(77%);
-	-webkit-filter: brightness(77%);
-	-webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.41);
--moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.41);
-box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.41);
-}
-
-/*-----------------------------------------------
-	Novidades - Fim
+	Linha de produção - Fim
 -----------------------------------------------*/

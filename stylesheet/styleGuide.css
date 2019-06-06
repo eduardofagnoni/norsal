@@ -3008,3 +3008,322 @@ a.item-pag-novidades:hover > img {
 /*-----------------------------------------------
 	Novidades - Fim
 -----------------------------------------------*/
+/*-----------------------------------------------
+	Linha de produção
+-----------------------------------------------*/
+@media only screen and (min-width: 320px) {
+  section#linha-prod-mobile {
+    display: block;
+  }
+  section#linha-prod-desk {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1120px) {
+  section#linha-prod-mobile {
+    display: none;
+  }
+  section#linha-prod-desk {
+    display: block;
+  }
+  section.linha-de-producao {
+    position: relative;
+    height: 1400px;
+    display: block;
+  }
+  section.linha-de-producao h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    color: #2da8db;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  section.linha-de-producao p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    color: #005282;
+    margin: 0;
+    padding: 0;
+  }
+  section.linha-de-producao div.itens-da-linha {
+    position: absolute;
+  }
+  section.linha-de-producao .foto-extracao-das-aguas {
+    top: 47px;
+    left: -44px;
+  }
+  section.linha-de-producao .linha-passo-1-2 {
+    top: 200px;
+    left: 119px;
+  }
+  section.linha-de-producao .numero-1 {
+    top: 154px;
+    left: 104px;
+  }
+  section.linha-de-producao .texto-extracao-das-aguas {
+    top: 81px;
+    left: 157px;
+    width: 410px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-transporte-da-agua {
+    top: 203px;
+    left: 376px;
+  }
+  section.linha-de-producao .linha-passo-2-3 {
+    top: 384px;
+    left: 497px;
+  }
+  section.linha-de-producao .numero-2 {
+    top: 359px;
+    left: 451px;
+  }
+  section.linha-de-producao .texto-transporte-da-agua {
+    top: 230px;
+    left: 570px;
+    width: 410px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-a-evaporacao {
+    top: 511px;
+    left: 823px;
+  }
+  section.linha-de-producao .linha-passo-3-4 {
+    top: 640px;
+    left: 501px;
+  }
+  section.linha-de-producao .numero-3 {
+    top: 591px;
+    left: 798px;
+  }
+  section.linha-de-producao .texto-a-evaporacao {
+    top: 511px;
+    left: 375px;
+    width: 410px;
+    padding-right: 15px;
+    border-right: solid 5px #006097;
+    text-align: right;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-a-filtragem {
+    top: 650px;
+    left: 380px;
+  }
+  section.linha-de-producao .linha-passo-4-5 {
+    top: 834px;
+    left: 125px;
+  }
+  section.linha-de-producao .numero-4 {
+    top: 815px;
+    left: 451px;
+  }
+  section.linha-de-producao .texto-a-filtragem {
+    top: 677px;
+    left: -39px;
+    width: 410px;
+    padding-right: 15px;
+    border-right: solid 5px #006097;
+    text-align: right;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-a-cristalizacao {
+    top: 959px;
+    left: -64px;
+  }
+  section.linha-de-producao .linha-passo-5-6 {
+    top: 1086px;
+    left: 121px;
+  }
+  section.linha-de-producao .numero-5 {
+    top: 1037px;
+    left: 104px;
+  }
+  section.linha-de-producao .texto-a-cristalizacao {
+    top: 968px;
+    left: 161px;
+    width: 410px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-por-fim-a-colheita {
+    top: 1092px;
+    left: 376px;
+  }
+  section.linha-de-producao .linha-pontilhada {
+    top: 1271px;
+    left: 499px;
+  }
+  section.linha-de-producao .numero-6 {
+    top: 1256px;
+    left: 451px;
+  }
+  section.linha-de-producao .texto-por-fim-a-colheita {
+    top: 1115px;
+    left: 574px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section#linha-prod-mobile {
+    display: none;
+  }
+  section#linha-prod-desk {
+    display: block;
+  }
+  section.linha-de-producao {
+    position: relative;
+    height: 1400px;
+    display: block;
+    overflow: hidden;
+  }
+  section.linha-de-producao h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    color: #2da8db;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  section.linha-de-producao p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    color: #005282;
+    margin: 0;
+    padding: 0;
+  }
+  section.linha-de-producao div.itens-da-linha {
+    position: absolute;
+  }
+  section.linha-de-producao .foto-extracao-das-aguas {
+    top: 47px;
+    left: 46px;
+  }
+  section.linha-de-producao .linha-passo-1-2 {
+    top: 200px;
+    left: 209px;
+  }
+  section.linha-de-producao .numero-1 {
+    top: 154px;
+    left: 194px;
+  }
+  section.linha-de-producao .texto-extracao-das-aguas {
+    top: 81px;
+    left: 247px;
+    width: 410px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-transporte-da-agua {
+    top: 203px;
+    left: 466px;
+  }
+  section.linha-de-producao .linha-passo-2-3 {
+    top: 384px;
+    left: 587px;
+  }
+  section.linha-de-producao .numero-2 {
+    top: 359px;
+    left: 541px;
+  }
+  section.linha-de-producao .texto-transporte-da-agua {
+    top: 230px;
+    left: 660px;
+    width: 410px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-a-evaporacao {
+    top: 511px;
+    left: 913px;
+  }
+  section.linha-de-producao .linha-passo-3-4 {
+    top: 640px;
+    left: 591px;
+  }
+  section.linha-de-producao .numero-3 {
+    top: 591px;
+    left: 888px;
+  }
+  section.linha-de-producao .texto-a-evaporacao {
+    top: 511px;
+    left: 465px;
+    width: 410px;
+    padding-right: 15px;
+    border-right: solid 5px #006097;
+    text-align: right;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-a-filtragem {
+    top: 650px;
+    left: 470px;
+  }
+  section.linha-de-producao .linha-passo-4-5 {
+    top: 834px;
+    left: 215px;
+  }
+  section.linha-de-producao .numero-4 {
+    top: 815px;
+    left: 541px;
+  }
+  section.linha-de-producao .texto-a-filtragem {
+    top: 677px;
+    left: 51px;
+    width: 410px;
+    padding-right: 15px;
+    border-right: solid 5px #006097;
+    text-align: right;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-a-cristalizacao {
+    top: 959px;
+    left: 26px;
+  }
+  section.linha-de-producao .linha-passo-5-6 {
+    top: 1086px;
+    left: 211px;
+  }
+  section.linha-de-producao .numero-5 {
+    top: 1037px;
+    left: 194px;
+  }
+  section.linha-de-producao .texto-a-cristalizacao {
+    top: 968px;
+    left: 251px;
+    width: 410px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+  /*--------------------------------------------------*/
+  section.linha-de-producao .foto-por-fim-a-colheita {
+    top: 1092px;
+    left: 466px;
+  }
+  section.linha-de-producao .linha-pontilhada {
+    top: 1271px;
+    left: 589px;
+  }
+  section.linha-de-producao .numero-6 {
+    top: 1256px;
+    left: 541px;
+  }
+  section.linha-de-producao .texto-por-fim-a-colheita {
+    top: 1115px;
+    left: 664px;
+    padding-left: 15px;
+    border-left: solid 5px #006097;
+  }
+}
+/*-----------------------------------------------
+	Linha de produção - Fim
+-----------------------------------------------*/

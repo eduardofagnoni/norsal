@@ -397,4 +397,32 @@ txtTopoNovidadesRes = "Aqui, você fica por dentro de tudo o que acontece na Nor
 txtTopoNovidadesInternaTit = "Nossas <br>Novidades. | "
 txtTopoNovidadesInternaRes = "Aqui, você fica por dentro de tudo o que acontece na Norsal. Estamos constantemente nos atualizando, lançando novos projetos, desenvolvendo novos produtos e muito mais. | "
 
+
+'*********************************************************************************************
+'*********************************************************************************************
+'******    
+'******        LINHA DE PRODUÇÃO
+'******
+'******
+'*********************************************************************************************
+'*********************************************************************************************
+txtlinhaProducao1Tit = "EXTRACÃO DAS ÁGUAS | "
+txtlinhaProducao1Texto = "<strong>No fundo do oceano.</strong><br>A primeira parte do processo é retirar as águas do Oceano Atlântico, chamadas também de 'águas virgens'. | "
+
+txtlinhaProducao2Tit = "transporte da água | "
+txtlinhaProducao2Texto = "<strong>Direto para a Salina.</strong><br>A água é transportada para os tanques de nossa salina, onde é iniciado um processo de evaporação de aproximadamente 60 dias. | "
+
+txtlinhaProducao3Tit = "A EVAPORAÇÃO | "
+txtlinhaProducao3Texto = "<strong>A natureza faz a sua parte.</strong><br>Toda evaporação é feita naturalmente, pelo sol e pelo vento. A água dos tanques fica cada vez mais concentrada, até virar uma salmoura. | "
+
+txtlinhaProducao4Tit = "a Filtragem | "
+txtlinhaProducao4Texto = "<strong>A ação do crustáceo.</strong><br>Nesse momento, inserimos a Artêmia, um crustáceo que age como filtro biológico, removendo todo tipo de microrganismos da água. | "
+
+txtlinhaProducao5Tit = "a Cristalização | "
+txtlinhaProducao5Texto = "Quando o sal atinge o limite de saturação, a água é transferida para os cristalizadores. Lá, é feito a precipitação dos cristais de sal. | "
+
+txtlinhaProducao6Tit = "POR FIM, A COLHEITA. | "
+txtlinhaProducao6Texto = "Quando uma grande quantidade de sal é acumulada, fazemos a colheita. A partir desse momento, o sal é enviado para tratamento final, para consumo ou uso na indústria. | "
+
+
 %>

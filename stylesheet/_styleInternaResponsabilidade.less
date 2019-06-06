@@ -1,0 +1,119 @@
+/*-----------------------------------------------
+	Interna de responsabilidade
+-----------------------------------------------*/
+section.pag-int-resp aside {
+	overflow: hidden;
+}
+section.pag-int-resp h3 {
+	font-size: 5.9em;
+	text-transform: uppercase;
+	.texto-openSans;
+	color: #212b65;	
+	margin:0;
+	padding:0 0 10px 0;
+}
+section.pag-int-resp small {
+	font-size: 1.8em;
+	color: #37b8ef;
+	.texto-openSans;
+	font-weight: bold;
+	display: block;	
+	position: relative;
+}
+section.pag-int-resp h4 {
+	.texto-montserrat;
+	font-weight: bold;
+	color: #212b65;
+	text-transform: uppercase;
+	padding:10px 0 5px 0;
+	margin: 0 0 30px 0;
+	border-bottom: solid 9px #ececec;
+}
+section.pag-int-resp .ban-promo img {
+	width: 100%;
+}
+section.pag-int-resp header + small {
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+section.pag-int-resp header + small::before {
+	content: "";
+	width: 13px;
+	height: 13px;
+	display: block;
+	background:#37b8ef;
+	position: absolute;	
+	top:1px;
+	left:0;
+}
+section.pag-int-resp img {
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
+}
+section.pag-int-resp p {
+	.texto-openSans;
+	font-size: 1.9em;
+	color: #212b65;
+}
+section.pag-int-resp ol {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+section.pag-int-resp ol li {
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+section.pag-int-resp ol li small {
+	position: relative;
+}
+section.pag-int-resp ol li small::after {
+	content:"";
+	display: block;
+	width: 0;
+	height: 5px;
+	background:#37b8ef;
+	position: absolute;
+	left: 70px;
+	top:5px;
+	.tempoDeTransicao(0.2s); 
+}
+section.pag-int-resp ol li:hover > small::after {
+	width: 100%;
+	.tempoDeTransicao(0.2s); 
+}
+
+section.pag-int-resp ol li h5 {
+	font-size: 3em;
+	.texto-openSans;
+	color: #212b65;
+	margin:0;
+	padding:0;
+}
+section.pag-int-resp .compartilhamento {
+	margin:30px 0 0 0;
+	border-top:solid 1px #dcdcdc;
+	padding:14px 0 0 0;	
+}
+section.pag-int-resp .compartilhamento p {
+	color: #16598d;
+	.texto-openSans;
+	font-size: 2em;	
+}
+section.pag-int-resp .compartilhamento p a {
+	font-size: 2em;
+	color: #2fb3ed;
+	margin: 0 5px;
+	text-decoration: none;
+	background: transparent;
+	.tempoDeTransicao(0.2s); 
+}
+section.pag-int-resp .compartilhamento p a:hover {
+	color: #16598d;
+	.tempoDeTransicao(0.2s); 
+}
+/*-----------------------------------------------
+	Interna de responsabilidade - Fim
+-----------------------------------------------*/ 
