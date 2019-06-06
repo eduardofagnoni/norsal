@@ -1,5 +1,6 @@
 <%@LANGUAGE="VBSCRIPT"%>
 <!-- #include file="_classes/__cl__conexao.asp" -->
+<!-- #include file="_limpa-base-de-dados.asp" -->
 <%
 Dim oValida
 Set oValida = New ValidaSessao
@@ -17,13 +18,12 @@ oUsuario.AbreTabela("select id,nome,dataCadastro from "&oUsuario.prefixoTabela&"
 nomeDoUsuario = oUsuario.rs("nome")
 dataCadastro = oUsuario.rs("dataCadastro")
 
-Dim oListaGaleriaImagens
-Set oListaGaleriaImagens = New Conexao
-oListaGaleriaImagens.AbreConexao()
-oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.prefixoTabela&"galeriadeimagensnome where ativo='s' order by nome asc")
+Dim oListaProjeto
+Set oListaProjeto = New Conexao
+oListaProjeto.AbreConexao()
+oListaProjeto.AbreTabela("select id,nome,data from "&oListaProjeto.prefixoTabela&"novidades where ativo='s' AND regTerminado='s' order by nome asc")
 
 %>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
@@ -62,10 +62,10 @@ oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.pref
         <div class="content-wrapper">
             
             <section class="content-header">
-                <h1>Lista de Galerias de Imagens <small></small></h1>
+                <h1>Lista de Novidades <small></small></h1>
                 <ol class="breadcrumb">
                     <li><a href="admin.asp"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="active">Lista de Galerias de Imagens</li>
+                    <li class="active">Lista de Novidades</li>
                 </ol>
             </section>
             
@@ -73,12 +73,12 @@ oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.pref
 
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">Galerias</h3>
+                        <h3 class="box-title">Novidades</h3>
 
                         <div style="float:right;">
-                            <a href="add-galeria-imagens.asp" class="btnExtBt btAzul" style="display:block">                                    
+                            <a href="add-novidades.asp" class="btnExtBt btAzul" style="display:block">                                    
                                 <div class="bg2"><img src="images/btGeralBr.png" alt=""></div>
-                                Incluir nova
+                                Incluir novo
                             </a>
                         </div>
                         <div class="clearfix"></div>
@@ -88,38 +88,30 @@ oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.pref
                         <table id="example1" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th width="290">Galeria</th>
-                                    <th>Informações</th>
+                                    <th>Nome</th>
+                                    <th>Data</th>
                                     <th width="90">Controles</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <%
-                                while not oListaGaleriaImagens.rs.eof 
-                                    oComContaItens.ContaItem("SELECT COUNT(*) FROM "&oComContaItens.prefixoTabela&"galeriadeimagensarquivo WHERE ativo='s' and idGaleria="&oListaGaleriaImagens.rs("id")&" ")
-                                    totalDeFotos = oComContaItens.resultadoContaItem
+                                while not oListaProjeto.rs.eof                                     
                                 %>
                                 <tr>
-                                    <td><iframe frameborder="0" height="180" style="background:transparent;" scrolling="no" src="../_embedGaleria.asp?id=<%=oListaGaleriaImagens.rs("id")%>" width="280"></iframe></td>
-                                    <td>
-                                        <strong>Nome: </strong><%=oListaGaleriaImagens.rs("nome")%><br>
-                                        <strong>Utilizador: </strong>_embedGaleria.asp?id=<%=oListaGaleriaImagens.rs("id")%><br>
-                                        <strong>Slides: </strong><%=totalDeFotos%>
-                                        <hr>
-                                        <strong>Na Aba 'Avançado' do iframe, incluir:</strong> ID<%=oListaGaleriaImagens.rs("id")%>
-                                    </td>
+                                    <td><%=oListaProjeto.rs("nome")%></td>
+                                    <td><%=oListaProjeto.rs("data")%></td>
                                     <td>
                                         <ul style="margin:0; padding:0; list-style:none;">
-                                            <li style="margin-bottom:10px;"><a href="editar-galeria-imagens.asp?id=<%=oListaGaleriaImagens.rs("id")%>" class="btn btn-block btn-primary">Editar</a></li>
+                                            <li style="margin-bottom:10px;"><a href="add-novidades.asp?regIni=s&id=<%=oListaProjeto.rs("id")%>" class="btn btn-block btn-primary">Editar</a></li>
                                             <!--<li style="margin-bottom:10px;"><a href="" class="btn btn-block btn-warning">Desabilitar</a></li>-->
                                         </ul>
                                     </td>
                                 </tr>
                                 <%
-                                oListaGaleriaImagens.rs.MoveNext()
+                                oListaProjeto.rs.MoveNext()
                                 wend
-                                oListaGaleriaImagens.rs.Close()
-                                set oListaGaleriaImagens.rs = nothing
+                                oListaProjeto.rs.Close()
+                                set oListaProjeto.rs = nothing
                                 %>                       
                             </tbody>                        
                         </table>
@@ -149,8 +141,6 @@ oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.pref
     <!-- ./wrapper -->
 
 
-
-
 <!-- jQuery 3 -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -174,6 +164,8 @@ oListaGaleriaImagens.AbreTabela("select id,nome from "&oListaGaleriaImagens.pref
     
   })
 </script>
+
+
 
 
 

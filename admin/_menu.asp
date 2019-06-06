@@ -28,6 +28,10 @@
             <li><a href="lista-projetos.asp"><i class="fa fa-list"></i> Lista de Projetos</a></li>
             <li><a href="add-projetos.asp"><i class="fa fa-plus-square"></i> Adicionar Projeto</a></li>
 
+            <li class="header">Novidades</li>
+            <li><a href="lista-novidades.asp"><i class="fa fa-list"></i> Lista de Novidades</a></li>
+            <li><a href="add-novidades.asp"><i class="fa fa-plus-square"></i> Adicionar Novidade</a></li>
+
             <li class="header">Galeria de imagens</li>
             <li><a href="lista-galeria-imagens.asp"><i class="fa fa-list"></i> Lista de Galerias</a></li>
             <li><a href="add-galeria-imagens.asp"><i class="fa fa-plus-square"></i> Adicionar Galeria</a></li>

@@ -55,6 +55,7 @@ Class Conexao
 			upNoticias					=	caminhoFisico+"admin\__media\noticias"
 			upProdutos					=	caminhoFisico+"admin\__media\produtos"
 			upProjetos					=	caminhoFisico+"admin\__media\projetos"
+			upNovidades					=	caminhoFisico+"admin\__media\novidades"
 
 			'*** endereços URLs ***	
 
@@ -63,6 +64,7 @@ Class Conexao
 			enderecoNoticias			=	caminhoInicial+"/admin/__media/noticias/"
 			enderecoProdutos			=	caminhoInicial+"/admin/__media/produtos/"
 			enderecoProjetos			=	caminhoInicial+"/admin/__media/projetos/"
+			enderecoNovidades			=	caminhoInicial+"/admin/__media/novidades/"
 
 		elseif tipoDeAmbiente="localBZ" then				
 
@@ -123,12 +125,14 @@ Class Conexao
 	public upNoticias
 	public upProdutos
 	public upProjetos
+	public upNovidades
 	
 	public enderecoGalerias
 	public enderecoMarcas
 	public enderecoNoticias
 	public enderecoProdutos
 	public enderecoProjetos
+	public enderecoNovidades
 		
 
 	'*************************************************************************	
