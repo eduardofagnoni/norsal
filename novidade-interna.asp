@@ -1,5 +1,31 @@
+<%@LANGUAGE="VBSCRIPT"%>
+<!-- #include file="admin/_classes/__cl__conexao.asp" -->
+
 <!--#include file="functions/idiomas.asp"-->
 <!--#include file="functions/__pega_nome_da_pagina.asp"-->
+
+<%
+Function SafeSQL(sInput)
+    TempString = sInput	  
+    sBadChars=array("select", "drop", ";", "--", "insert", "delete", "xp_", "#", "%", "&", "'", "(", ")", ":", ";", "<", ">", "=", "[", "]", "?", "'", "|") 
+    For iCounter = 0 to uBound(sBadChars)
+    TempString = replace(TempString,sBadChars(iCounter),"")
+    Next
+    SafeSQL = TempString
+End function
+
+id = SafeSQL(request("id"))
+
+
+Dim oListaNovidades
+Set oListaNovidades = New Conexao
+oListaNovidades.AbreConexao()
+oListaNovidades.AbreTabela("select nome,nome_eng,fotoTopoPagina,texto,texto_eng,dataProjeto from "&oListaNovidades.prefixoTabela&"novidades where ativo='s' AND regTerminado='s' AND id="&id)
+
+
+%>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -39,15 +65,11 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-9">
                         <header>
-                            <h3>EDUCAÇÃO AMBIENTAL E AÇOES COMUNITÁRIAS.</h3>
+                            <h3><%=oListaNovidades.rs("nome"&sufixo_lang)%></h3>
                         </header>
-                        <small>22.07.2019</small>
-                        <img src="images/marc-int-resp.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <small><%=oListaNovidades.rs("dataProjeto")%></small>
+                        <img src="<%=oListaNovidades.enderecoNovidades%><%=oListaNovidades.rs("fotoTopoPagina")%>" alt="<%=oListaNovidades.rs("nome"&sufixo_lang)%>">
+                        <%=oListaNovidades.rs("texto"&sufixo_lang)%>
 
                         <div class="clearfix"></div>
                         <div class="compartilhamento">
@@ -55,27 +77,37 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3">
-                        <h4><% response.Write traduzir("txtSecton3ResponsabilidadeInternaVisitas") %></h4>
-                        <ol>
-                            <li>
-                            <small>22.07.2019</small>
-                            <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            </li>
-                            <li>
-                            <small>22.07.2019</small>
-                            <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            </li>
-                            <li>
-                            <small>22.07.2019</small>
-                            <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            </li>
-                        </ol>
-                        <div class="ban-promo">
-                            <img src="images/bn-marc.jpg" alt="" >
-                        </div>
+                        <aside>
+                            <h4><% response.Write traduzir("txtSecton3ResponsabilidadeInternaVisitas") %></h4>
+                            <%
+                                oListaNovidades.AbreTabela("select id,nome,nome_eng,resumo,resumo_eng,dataProjeto from "&oListaNovidades.prefixoTabela&"novidades where ativo='s' AND regTerminado='s' AND id<>"&id)
+                            %>
+
+                            <ol>
+
+
+                                <%
+                                while not oListaNovidades.rs.eof  
+                                %>
+                                <li onClick="location.href='_trata-URL.asp?destino=novidade-interna.asp&idProjeto=<%=oListaNovidades.rs("id")%>'">
+                                <small><%=oListaNovidades.rs("dataProjeto")%></small>
+                                <h5><%=oListaNovidades.rs("nome"&sufixo_lang)%></h5>
+                                <p><%=oListaNovidades.rs("resumo"&sufixo_lang)%></p>
+                                </li>
+                                <%
+                                oListaNovidades.rs.MoveNext()
+                                wend
+                                oListaNovidades.rs.Close()
+                                set oListaNovidades.rs = nothing
+                                %> 
+
+
+                                
+                            </ol>
+                            <div class="ban-promo">
+                                <img src="images/bn-marc.jpg" alt="" >
+                            </div>
+                        </aside>
                     </div>                    
                 </div> 
                 <div class="row">
@@ -94,11 +126,16 @@
     </main>
 
 
-
+<!--
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+-->
+
+<script src="assets/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/scrollme/jquery.scrollme.js"></script>  
+
 
 <script type="text/javascript" src="plugins/responsiveCarousel/js/responsiveCarousel.min.js"></script>
 

@@ -69,12 +69,33 @@
                     
                     <ol class="linha-do-tempo">
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno1") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40" 
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno1") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit1") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto1") %></p>
                                     </div> 
@@ -83,12 +104,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno2") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno2") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit2") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto2") %></p>
                                     </div> 
@@ -97,12 +139,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno3") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno3") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit3") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto3") %></p>
                                     </div> 
@@ -111,12 +174,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno4") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno4") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit4") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto4") %></p>
                                     </div> 
@@ -125,12 +209,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno5") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno5") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit5") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto5") %></p>
                                     </div> 
@@ -139,12 +244,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno6") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno6") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit6") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto6") %></p>
                                     </div> 
@@ -153,12 +279,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno7") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno7") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit7") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto7") %></p>
                                     </div> 
@@ -167,12 +314,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno8") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno8") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit8") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto8") %></p>
                                     </div> 
@@ -181,12 +349,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno9") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno9") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit9") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto9") %></p>
                                     </div> 
@@ -195,12 +384,33 @@
                         </li>
 
                         <li>
-                            <div class="item">
+                            <div class="item scrollme animateme"
+                                data-when="exit"
+                                data-from="0.3"
+                                data-to="0"
+                                data-easing="easeinout"
+                                data-opacity="0"
+                                data-translatey="90"
+                            >
                                 <div class="col">                                
-                                    <h3><% response.Write traduzir("txtLinhaDoTempoANorsalAno10") %></h3>
+                                    <h3 class="scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.5"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="-40"
+                                    ><% response.Write traduzir("txtLinhaDoTempoANorsalAno10") %></h3>
                                 </div>
                                 <div class="col">
-                                    <div class="cont">
+                                    <div class="cont scrollme animateme"
+                                        data-when="span"
+                                        data-from="0.9"
+                                        data-to="0"
+                                        data-easing="easeinout"
+                                        data-opacity="0"
+                                        data-translatex="40"
+                                    >
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTit10") %></p>
                                         <p><% response.Write traduzir("txtLinhaDoTempoANorsalTexto10") %></p>
                                     </div> 
@@ -236,20 +446,26 @@
                                 
                                 <div class="crsl-item">
                                         <img src="plugins/responsiveCarousel/img/thumb02.jpg" alt="danny antonucci">
-                                </div>                         
+                                </div>   
+
+                                <div class="crsl-item">
+                                        <img src="plugins/responsiveCarousel/img/thumb01.jpg" alt="nyc subway">
+                                </div>                      
                             </div>
                         </div>
                     </div>                
                 </div>
             </div>
             
-            <nav class="slidernav">
+            <nav class="slidernav" style="margin-top:10px; margin-right:-10px;">
                 <div id="navbtns" class="clearfix">
                     <a href="#" class="previous"><span class="fa fa-chevron-left"></span></a>
                     <a href="#" class="next"><span class="fa fa-chevron-right"></span></a>
                 </div>
             </nav>   
         </section>
+
+        <div id="certificacao"></div>
 
         <section class="textos-laterais" style="background:#e9e9e9;padding-top:100px;padding-bottom:80px;">  
             <div class="container">
@@ -279,12 +495,41 @@
                         <p><% response.Write traduzir("txtSection6ANorsalTexto2") %></p>
                 </div>
                 <div class="col-md-7 col-xs-12 text-center">
-                    <img src="images/mapa.png" alt="Mapa de atuação" class="img-mapa">
+                    <img src="images/mapa.png" alt="Mapa de atuação" class="img-mapa scrollme animateme"
+                        data-when="enter"
+                        data-from="0.9"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
 
                     <ul class="malhas-e-vias">
-                        <li><span class="rod"></span><p><% response.Write traduzir("txtSection6ANorsalItem1") %></p></li>
-                        <li><span class="fer"></span><p><% response.Write traduzir("txtSection6ANorsalItem2") %></small></p></li>
-                        <li><span class="mar"></span><p><% response.Write traduzir("txtSection6ANorsalItem3") %></p></li>
+                        <li class="scrollme animateme"
+                            data-when="enter"
+                            data-from="0.3"
+                            data-to="0"
+                            data-easing="easeinout"
+                            data-opacity="0"
+                            data-translatey="60"
+                        ><span class="rod"></span><p><% response.Write traduzir("txtSection6ANorsalItem1") %></p></li>
+                        <li class="scrollme animateme"
+                            data-when="enter"
+                            data-from="0.3"
+                            data-to="0"
+                            data-easing="easeinout"
+                            data-opacity="0"
+                            data-translatey="60"
+                        ><span class="fer"></span><p><% response.Write traduzir("txtSection6ANorsalItem2") %></small></p></li>
+                        <li class="scrollme animateme"
+                            data-when="enter"
+                            data-from="0.3"
+                            data-to="0"
+                            data-easing="easeinout"
+                            data-opacity="0"
+                            data-translatey="60"
+                        ><span class="mar"></span><p><% response.Write traduzir("txtSection6ANorsalItem3") %></p></li>
                     </ul>
                 </div>
             </div>
@@ -315,16 +560,23 @@
 
     </main>
 
+<script src="assets/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/scrollme/jquery.scrollme.js"></script>
 
-
+<!--
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+-->
 
 <script type="text/javascript" src="plugins/responsiveCarousel/js/responsiveCarousel.min.js"></script>
 
 <script>
+//desabilita scrollme no mobile
+var s = scrollme;
+$(document).on( s.init_events.join(  ' '  ), function() { s.init("disable_on_mobile") } );
+
 
     (function() {
 

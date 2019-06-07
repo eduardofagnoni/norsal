@@ -85,6 +85,10 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 /*-----------------------------------------------
 	Linha de produção
 -----------------------------------------------*/
+
+
+
+
 @media only screen and (min-width: 320px) {
 	section#linha-prod-mobile {
 		display: block;
@@ -92,6 +96,70 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 	section#linha-prod-desk {
 		display:none;
 	}
+
+	section#linha-prod-mobile h5 {
+		.texto-openSans;
+		font-size: 2.1em;
+		color:#2da8db;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin:0;
+		padding: 0;
+	}
+	section#linha-prod-mobile p {
+		.texto-openSans;
+		font-size: 2.1em;
+		color:#005282;
+		margin:0;
+		padding: 0;
+	}
+
+	section#linha-prod-mobile .linha-de-producao-mobile {
+		margin:0 auto;
+		width: 321px;
+		height: 2382px;
+		background-image: url(../images/itens-linha-producao/linha_producao_mobile.jpg);
+		background-repeat: no-repeat;
+		background-position: top left;
+		display:block;
+		position: relative;
+	}
+
+	section#linha-prod-mobile .linha-de-producao-mobile .itens-da-linha {
+		position: absolute;
+	}
+
+	section#linha-prod-mobile .linha-de-producao-mobile .texto-extracao-das-aguas {
+		top:220px;
+		left:22px;
+		width: 240px;
+	}
+	section#linha-prod-mobile .linha-de-producao-mobile .texto-transporte-da-agua {
+		top:573px;
+		left:57px;
+		width: 240px;
+	}
+	section#linha-prod-mobile .linha-de-producao-mobile .texto-a-evaporacao {
+		top:937px;
+		left:20px;
+		width: 240px;
+	}
+	section#linha-prod-mobile .linha-de-producao-mobile .texto-a-filtragem {
+		top:1353px;
+		left:57px;
+		width: 240px;
+	}
+	section#linha-prod-mobile .linha-de-producao-mobile .texto-a-cristalizacao {
+		top:1739px;
+		left:20px;
+		width: 240px;
+	}
+	section#linha-prod-mobile .linha-de-producao-mobile .texto-por-fim-a-colheita {
+		top:2106px;
+		left:22px;
+		width: 240px;
+	}
+
 }
 @media only screen and (min-width: 480px) {}
 @media only screen and (min-width: 600px) {}
@@ -112,6 +180,7 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 		display: block;
 		//overflow: hidden;
 	}
+
 	section.linha-de-producao h5 {
 		.texto-openSans;
 		font-size: 2.1em;
@@ -128,6 +197,7 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 		margin:0;
 		padding: 0;
 	}
+	
 	section.linha-de-producao div.itens-da-linha {
 		position: absolute;
 	}
@@ -409,8 +479,7 @@ p {.texto-openSans;.azul-texto;font-size: 2em;}
 		border-left:solid 5px #006097;
 	}
 
-}
-	
+}	
 /*-----------------------------------------------
 	Linha de produção - Fim
 -----------------------------------------------*/

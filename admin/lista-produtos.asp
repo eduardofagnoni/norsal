@@ -10,6 +10,10 @@ Dim oComContaItens
 Set oComContaItens = New Conexao
 oComContaItens.AbreConexao()
 
+Dim oComOutrasListas
+Set oComOutrasListas = New Conexao
+oComOutrasListas.AbreConexao()
+
 Dim oUsuario
 Set oUsuario = New Conexao
 oUsuario.AbreConexao()
@@ -21,7 +25,7 @@ dataCadastro = oUsuario.rs("dataCadastro")
 Dim oListaProdutos
 Set oListaProdutos = New Conexao
 oListaProdutos.AbreConexao()
-oListaProdutos.AbreTabela("select id,foto,nome from "&oListaProdutos.prefixoTabela&"produtos where ativo='s' AND regTerminado='s' order by nome asc")
+oListaProdutos.AbreTabela("select id,idSegmento,foto,nome from "&oListaProdutos.prefixoTabela&"produtos where ativo='s' AND regTerminado='s' order by nome asc")
 
 %>
 <!DOCTYPE html>
@@ -90,16 +94,26 @@ oListaProdutos.AbreTabela("select id,foto,nome from "&oListaProdutos.prefixoTabe
                                 <tr>
                                     <th width="90">Foto Produto</th>
                                     <th>Nome</th>
+                                    <th>Segmento</th>
                                     <th width="90">Controles</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <%
-                                while not oListaProdutos.rs.eof                                     
+                                while not oListaProdutos.rs.eof   
+
+                                oComOutrasListas.AbreTabela("select nome from "&oComOutrasListas.prefixoTabela&"segmentos where ativo='s' AND id="&oListaProdutos.rs("idSegmento"))
+                                if oComOutrasListas.rs.eof=false then
+                                nomeDoSegmento = oComOutrasListas.rs("nome")
+                                else
+                                nomeDoSegmento = "Segmento não foi definido"
+                                end if
+                                              
                                 %>
                                 <tr>
                                     <td style="text-align:center"><img src="<%=oListaProdutos.enderecoProdutos%><%=oListaProdutos.rs("foto")%>" alt="" style="width:80px;" ></td>
-                                    <td><%=oListaProdutos.rs("nome")%></td>                                    
+                                    <td><%=oListaProdutos.rs("nome")%></td>  
+                                    <td><%=nomeDoSegmento%></td>                                  
                                     <td>
                                         <ul style="margin:0; padding:0; list-style:none;">
                                             <li style="margin-bottom:10px;"><a href="add-produtos.asp?regIni=s&id=<%=oListaProdutos.rs("id")%>" class="btn btn-block btn-primary">Editar</a></li>

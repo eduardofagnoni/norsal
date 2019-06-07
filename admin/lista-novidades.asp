@@ -103,7 +103,7 @@ oListaProjeto.AbreTabela("select id,nome,data from "&oListaProjeto.prefixoTabela
                                     <td>
                                         <ul style="margin:0; padding:0; list-style:none;">
                                             <li style="margin-bottom:10px;"><a href="add-novidades.asp?regIni=s&id=<%=oListaProjeto.rs("id")%>" class="btn btn-block btn-primary">Editar</a></li>
-                                            <!--<li style="margin-bottom:10px;"><a href="" class="btn btn-block btn-warning">Desabilitar</a></li>-->
+                                            <li style="margin-bottom:10px;"><a href="deleta-novidades.asp?id=<%=oListaProjeto.rs("id")%>" class="btn btn-block btn-warning">Excluir</a></li>
                                         </ul>
                                     </td>
                                 </tr>

@@ -49,7 +49,7 @@
             </div>
         </section>
 
-        <section class="container textos-laterais" style="padding-top:100px;padding-bottom:0">        
+        <section class="container textos-laterais" style="padding-top:100px;padding-bottom:0" id="linha-de-producao">        
             <header class="inline">
                 <h2 class=""><% response.Write traduzir("txtSection3ProducaoTit") %></h2>
                 <div class="lats">
@@ -58,7 +58,34 @@
             </header>            
         </section>
 
-        <section id="linha-prod-mobile">incluir imagem da linha de produção</section>
+        <section id="linha-prod-mobile">        
+            <div class="linha-de-producao-mobile">                
+                <div class="itens-da-linha texto-extracao-das-aguas">
+                    <h5><% response.Write traduzir("txtlinhaProducao1Tit") %></h5>
+                    <p><% response.Write traduzir("txtlinhaProducao1Texto") %></p>
+                </div>
+                <div class="itens-da-linha texto-transporte-da-agua" style="text-align:right">
+                    <h5><% response.Write traduzir("txtlinhaProducao2Tit") %></h5>
+                    <p><% response.Write traduzir("txtlinhaProducao2Texto") %></p>
+                </div>
+                <div class="itens-da-linha texto-a-evaporacao">
+                    <h5><% response.Write traduzir("txtlinhaProducao3Tit") %></h5>
+                    <p><% response.Write traduzir("txtlinhaProducao3Texto") %></p>
+                </div>
+                <div class="itens-da-linha texto-a-filtragem" style="text-align:right">
+                    <h5><% response.Write traduzir("txtlinhaProducao4Tit") %></h5>
+                    <p><% response.Write traduzir("txtlinhaProducao4Texto") %></p>
+                </div>
+                <div class="itens-da-linha texto-a-cristalizacao">
+                    <h5><% response.Write traduzir("txtlinhaProducao5Tit") %></h5>
+                    <p><% response.Write traduzir("txtlinhaProducao5Texto") %></p>
+                </div>
+                <div class="itens-da-linha texto-por-fim-a-colheita">
+                    <h5><% response.Write traduzir("txtlinhaProducao6Tit") %></h5>
+                    <p><% response.Write traduzir("txtlinhaProducao6Texto") %></p>
+                </div>
+            </div>        
+        </section>
 
         <section id="linha-prod-desk" class="linha-de-producao container">
 
@@ -290,19 +317,19 @@
                     <figure>
                         <img src="images/a-historia-do-sal.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtSection4ProducaoTit1") %></p>
-                        <figcaption><% response.Write traduzir("txtSection4ProducaoTexto1") %></figcaption>
+                        <figcaption style="margin-bottom:45px;"><% response.Write traduzir("txtSection4ProducaoTexto1") %></figcaption>
                         <button class="bt bt-saibaMais"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoSaibaMais") %></button>
                     </figure>
                     <figure>
                         <img src="images/a-importancia-do-sal.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtSection4ProducaoTit2") %></p>
-                        <figcaption><% response.Write traduzir("txtSection4ProducaoTexto2") %></figcaption>
+                        <figcaption style="margin-bottom:45px;"><% response.Write traduzir("txtSection4ProducaoTexto2") %></figcaption>
                         <button class="bt bt-saibaMais"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoSaibaMais") %></button>
                     </figure>
                     <figure>
                         <img src="images/as-vantagens-do-consumo-consciente.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtSection4ProducaoTit3") %></p>
-                        <figcaption><% response.Write traduzir("txtSection4ProducaoTexto3") %></figcaption>
+                        <figcaption style="margin-bottom:45px;"><% response.Write traduzir("txtSection4ProducaoTexto3") %></figcaption>
                         <button class="bt bt-saibaMais"><i class="fa fa-chevron-right" aria-hidden="true"></i><% response.Write traduzir("txtBotaoSaibaMais") %></button>
                     </figure>
                 </div>        
@@ -316,7 +343,7 @@
 
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/scrollme/jquery.scrollme.js"></script>  
 
 <script>

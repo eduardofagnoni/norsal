@@ -27,7 +27,7 @@
             <header>
                 <h1><% response.Write traduzir("txtBannerHome") %></h1>
                 <p><% response.Write traduzir("txtBannerHomeLinha2") %></p>
-                <button class="bt bt-branco"><% response.Write traduzir("txtBotaoBannerHome") %></button>
+                <button class="bt bt-branco" style="margin-top:15px" onclick="location.href='a-norsal.asp'"><% response.Write traduzir("txtBotaoBannerHome") %></button>
             </header>
         </section>
 
@@ -56,23 +56,47 @@
         <section style="background:#e9e9e9; padding-bottom:56px;position:relative;margin-top:60px;">
             <div class="container">
                 <div class="features" style="margin-top:-40px;">  
-                    <figure>
+                    <figure class="scrollme animateme"
+                        data-when="span"
+                        data-from="0.3"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <img src="images/cuidado-e-dedicacao-na-producao.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit1") %></p>
                         <figcaption><% response.Write traduzir("txtFeaturesHomeRes1") %></figcaption>
-                        <button class="bt bt-saibaMais"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoSaibaMaisSobreProducao") %></button>
+                        <button class="bt bt-saibaMais" onclick="location.href='producao.asp'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoSaibaMaisSobreProducao") %></button>
                     </figure>
-                    <figure>
+                    <figure class="scrollme animateme"
+                        data-when="span"
+                        data-from="0.5"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <img src="images/qualidade-e-a-nossa-prioridade.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit2") %></p>
                         <figcaption><% response.Write traduzir("txtFeaturesHomeRes2") %></figcaption>
-                        <button class="bt bt-saibaMais"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoConfiraNossaCertificacao") %></button>
+                        <button class="bt bt-saibaMais" onclick="location.href='a-norsal.asp#certificacao'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoConfiraNossaCertificacao") %></button>
                     </figure>
-                    <figure>
+                    <figure class="scrollme animateme"
+                        data-when="span"
+                        data-from="0.7"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <img src="images/uma-das-maiores-salinas-da-america-latina.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit3") %></p>
                         <figcaption><% response.Write traduzir("txtFeaturesHomeRes2") %></figcaption>
-                        <button class="bt bt-saibaMais"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtConhecaNossaSalina") %></button>
+                        <button class="bt bt-saibaMais" onclick="location.href='a-norsal.asp'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtConhecaNossaSalina") %></button>
                     </figure>
                 </div>        
             </div>
@@ -87,13 +111,37 @@
             </header>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-xs-12 text-center" style="padding-top:60px">
+                    <div class="col-md-4 col-xs-12 text-center scrollme animateme" style="padding-top:60px"
+                        data-when="span"
+                        data-from="0.3"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <img src="images/segmento-consumidor.gif" style="cursor:pointer" alt="Consumidor" onclick="location.href='produtos.asp?idSegmento=1&idMarca=1'">
                     </div>
-                    <div class="col-md-4 col-xs-12 text-center" style="padding-top:60px">
+                    <div class="col-md-4 col-xs-12 text-center scrollme animateme" style="padding-top:60px"
+                        data-when="span"
+                        data-from="0.5"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <img src="images/segmento-industria.gif" style="cursor:pointer" alt="Indústria" onclick="location.href='produtos.asp?idSegmento=2&idMarca=1'">
                     </div>
-                    <div class="col-md-4 col-xs-12 text-center" style="padding-top:60px">
+                    <div class="col-md-4 col-xs-12 text-center scrollme animateme" style="padding-top:60px"
+                        data-when="span"
+                        data-from="0.7"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <img src="images/segmento-pecuaria.gif" style="cursor:pointer" alt="Pecuária" onclick="location.href='produtos.asp?idSegmento=3&idMarca=1'">
                     </div>
                 </div>
@@ -103,25 +151,49 @@
         <section class="features-home">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-12 scrollme animateme"
+                        data-when="span"
+                        data-from="0.3"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <div class="item">
                             <h2><% response.Write traduzir("txtTitFeature1Sec3Home") %></h2>
                             <p><% response.Write traduzir("txtResFeature1Sec3Home") %></p>
-                            <button class="bt bt-branco"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProducao") %></button>
+                            <button class="bt bt-branco" onclick="location.href='producao.asp'"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProducao") %></button>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-12 scrollme animateme"
+                        data-when="span"
+                        data-from="0.5"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <div class="item">
                             <h2><% response.Write traduzir("txtTitFeature2Sec3Home") %></h2>
                             <p><% response.Write traduzir("txtResFeature2Sec3Home") %></p>
-                            <button class="bt bt-branco"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProjetos") %></button>
+                            <button class="bt bt-branco" onclick="location.href='responsabilidade.asp'"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProjetos") %></button>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-12 scrollme animateme"
+                        data-when="span"
+                        data-from="0.7"
+                        data-to="0"
+                        data-easing="easeinout"
+                        data-opacity="0"
+                        data-translatey="60"
+                        data-rotatey="180"
+                    >
                         <div class="item">
                             <h2><% response.Write traduzir("txtTitFeature3Sec3Home") %></h2>
                             <p><% response.Write traduzir("txtResFeature3Sec3Home") %></p>
-                            <button class="bt bt-branco"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaDistribuicao") %></button>
+                            <button class="bt bt-branco" onclick="location.href='fale-conosco.asp'"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaDistribuicao") %></button>
                         </div>
                     </div>
                 </div>
@@ -136,14 +208,24 @@
 
 
 
+<script src="assets/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/scrollme/jquery.scrollme.js"></script>  
+
+<!-- verificar e retirar
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="plugins/responsiveCarousel/js/responsiveCarousel.min.js"></script>
+-->
+
 
 <script>
+//desabilita scrollme no mobile
+var s = scrollme;
+$(document).on( s.init_events.join(  ' '  ), function() { s.init("disable_on_mobile") } );
+
 
     (function() {
 
@@ -177,6 +259,7 @@
         $("nav").animate({top:"-700", opacity:"hide" }, 400);
     }
 
+    /*
     $(function(){
       $('.crsl-items').carousel({
         autoRotate: 4000,
@@ -190,10 +273,8 @@
         e.preventDefault();
       });
     });
-
-    
-
-
+    */
 </script>
+
 </body>
 </html>

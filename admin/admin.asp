@@ -5,6 +5,10 @@ Dim oValida
 Set oValida = New ValidaSessao
 oValida.validaPagina("Norsal_ADM_logado")
 
+Dim oComContaItens
+Set oComContaItens = New Conexao
+oComContaItens.AbreConexao()
+
 Dim oUsuario
 Set oUsuario = New Conexao
 oUsuario.AbreConexao()
@@ -52,7 +56,7 @@ dataCadastro = oUsuario.rs("dataCadastro")
         <div class="content-wrapper">
             
             <section class="content-header">
-                <h1>Cabeçalho da página <small>Descrição opcional</small></h1>
+                <h1>Dashboard Norsal <small></small></h1>
                 <!--
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Nível</a></li>
@@ -63,9 +67,96 @@ dataCadastro = oUsuario.rs("dataCadastro")
             
             <section class="content container-fluid">
 
-                <!--------------------------
-                | Your Page Content Here |
-                --------------------------->
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6">                    
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                            <%
+                            oComContaItens.ContaItem("SELECT COUNT(id) FROM "&oComContaItens.prefixoTabela&"produtos WHERE ativo='s' and regTerminado='s'")
+                            totalProdutos = oComContaItens.resultadoContaItem
+
+                            response.write("<h3>"&totalProdutos&"</h3>")
+                            %>
+                            <p>Quantidade de produtos</p>
+                            </div>
+                            <div class="icon">
+                            <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="lista-produtos.asp" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-xs-6">                    
+                        <div class="small-box bg-green">
+                            <div class="inner">
+                            <%
+                            oComContaItens.ContaItem("SELECT COUNT(id) FROM "&oComContaItens.prefixoTabela&"projetos WHERE ativo='s' and regTerminado='s'")
+                            totalProjetos = oComContaItens.resultadoContaItem
+
+                            response.write("<h3>"&totalProjetos&"</h3>")
+                            %>
+                            <p>Quantidade de projetos</p>
+                            </div>
+                            <div class="icon">
+                            <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="lista-projetos.asp" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-xs-6">                    
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                            <%
+                            oComContaItens.ContaItem("SELECT COUNT(id) FROM "&oComContaItens.prefixoTabela&"novidades WHERE ativo='s' and regTerminado='s'")
+                            totalNovidades = oComContaItens.resultadoContaItem
+
+                            response.write("<h3>"&totalNovidades&"</h3>")
+                            %>
+                            <p>Quantidade de notícias</p>
+                            </div>
+                            <div class="icon">
+                            <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="lista-novidades.asp" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-xs-6">                    
+                        <div class="small-box bg-red">
+                            <div class="inner">
+                            <%
+                            oComContaItens.ContaItem("SELECT COUNT(id) FROM "&oComContaItens.prefixoTabela&"galeriadeimagensnome WHERE ativo='s'")
+                            totalGalerias = oComContaItens.resultadoContaItem
+
+                            response.write("<h3>"&totalGalerias&"</h3>")
+                            %>
+                            <p>Quantidade de galerias</p>
+                            </div>
+                            <div class="icon">
+                            <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="lista-galeria-imagens.asp" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>                   
+                    
+                </div>
+
+
+                <!--
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-center">
+                        <strong>Escrever o período que está sendo mostrado</strong>
+                        </p>
+
+                        <div class="chart">                        
+                            <canvas id="salesChart" style="height: 180px;"></canvas>
+                        </div>                        
+                    </div>
+                </div>
+                -->
+
 
             </section>
             
@@ -102,8 +193,11 @@ dataCadastro = oUsuario.rs("dataCadastro")
 <!-- FastClick -->
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
 
-<!-- Opcionalmente, você pode adicionar plugins Slimscroll e FastClick.
-Ambos os plugins são recomendados para melhorar o
-experiência de usuário. -->
+<!-- ChartJS -->
+<!-- <script src="bower_components/chart.js/Chart.js"></script> -->
+<!-- gráfico -->
+<!-- <script src="dashboard.js"></script> -->
+
+
 </body>
 </html>

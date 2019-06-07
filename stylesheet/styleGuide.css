@@ -3018,6 +3018,65 @@ a.item-pag-novidades:hover > img {
   section#linha-prod-desk {
     display: none;
   }
+  section#linha-prod-mobile h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    color: #2da8db;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  section#linha-prod-mobile p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    color: #005282;
+    margin: 0;
+    padding: 0;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile {
+    margin: 0 auto;
+    width: 321px;
+    height: 2382px;
+    background-image: url(../images/itens-linha-producao/linha_producao_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: block;
+    position: relative;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .itens-da-linha {
+    position: absolute;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .texto-extracao-das-aguas {
+    top: 220px;
+    left: 22px;
+    width: 240px;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .texto-transporte-da-agua {
+    top: 573px;
+    left: 57px;
+    width: 240px;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .texto-a-evaporacao {
+    top: 937px;
+    left: 20px;
+    width: 240px;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .texto-a-filtragem {
+    top: 1353px;
+    left: 57px;
+    width: 240px;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .texto-a-cristalizacao {
+    top: 1739px;
+    left: 20px;
+    width: 240px;
+  }
+  section#linha-prod-mobile .linha-de-producao-mobile .texto-por-fim-a-colheita {
+    top: 2106px;
+    left: 22px;
+    width: 240px;
+  }
 }
 @media only screen and (min-width: 1120px) {
   section#linha-prod-mobile {

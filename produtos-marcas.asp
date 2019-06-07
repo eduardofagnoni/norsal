@@ -83,11 +83,15 @@
     </main>
 
 
-
+<!--
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+-->
+
+<script src="assets/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/scrollme/jquery.scrollme.js"></script>  
 
 <script type="text/javascript" src="plugins/responsiveCarousel/js/responsiveCarousel.min.js"></script>
 

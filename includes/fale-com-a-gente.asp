@@ -1,5 +1,12 @@
 <section class="fale-com-a-gente">
-    <div class="container">
+    <div class="container scrollme animateme"
+        data-when="span"
+        data-from="0.4"
+        data-to="0"
+        data-easing="easeinout"
+        data-opacity="0"
+        data-translatey="60"
+    >
         <ul>
             <li>
                 <header><% response.Write traduzir("txtTitFaleComAGente") %></header>

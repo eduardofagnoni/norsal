@@ -105,7 +105,7 @@ txtApoioCadastrese = "e receba mais informações e novidades. | and get more in
 '************************************************
 'banner home
 '**********************************************//
-txtBannerHome = "A número 1 <br>em vendas <br>no Brasil. | The number 1 <br>in sales <br>in Brazil."
+txtBannerHome = "A número 1 <br>em vendas de <br>sal no Brasil. | The number 1 in <br>sales of salt <br>in Brazil."
 txtBannerHomeLinha2 = "Com a linha mais diversificada do mercado. | With the most diversified line of the market."
 txtBotaoBannerHome = "Conheça a Norsal | Know the Norsal"
 
@@ -357,7 +357,7 @@ txtFaleConoscoFormEmpresa = "Empresa | "
 txtFaleConoscoFormSetor = "Setor | "
 txtFaleConoscoFormMsg = "Mensagem | "
 
-txtFaleConoscoFormMsgFinal = "Se você é <strong>transportador</strong> e está na região de Mossoró, estre já em contato conosco. | "
+txtFaleConoscoFormMsgFinal = "Se você é <strong>transportador</strong> e está na região de Mossoró/RN, estre já em contato conosco. | "
 
 txtFaleConoscoCentrosItem1Tit = "ADMINISTRAÇÃO E VENDAS | "
 txtFaleConoscoCentrosItem1End = "Av. Dr. Cardoso de Mello, 900 <br>Vila Olímpia - São Paulo/SP <br>CEP: 04548-003 <br>Tel: 55 (11) 3767-3810 <br>vendas@norsal.com.br | "

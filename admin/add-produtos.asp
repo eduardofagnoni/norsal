@@ -213,7 +213,7 @@ end if
                                                 if varIdMarcaRecuperado="" then
                                                     oConexaoListas.AbreTabela("select id,nome from "&oConexaoListas.prefixoTabela&"marcas where ativo='s' order by nome asc")
                                                 %>
-                                                <option value="" selected="selected">Selecione um segmento</option>
+                                                <option value="" selected="selected">Selecione uma Marca</option>
                                                 <%
                                                 else
                                                     oConexaoListas.AbreTabela("select id,nome from "&oConexaoListas.prefixoTabela&"marcas where ativo='s' AND id<>"&varIdMarcaRecuperado&" order by nome asc")
