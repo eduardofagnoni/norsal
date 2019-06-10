@@ -13,7 +13,7 @@
                 <p><% response.Write traduzir("txtApoioFaleComAGente") %></p>
             </li>
             <li>
-                <form id="frm-fale-com-a-gente" action="" method="post">
+                <form id="frm-fale-com-a-gente" action="fale-conosco.asp" method="post">
                     <button class="bt bt-branco"><% response.Write traduzir("txtBotaoCliqueEFaleComAGente") %></button>
                 </form>
             </li>
