@@ -63,11 +63,11 @@
                         data-easing="easeinout"
                         data-opacity="0"
                         data-translatey="60"
-                        data-rotatey="180"
-                    >
+                        data-rotatey="180">
                         <img src="images/cuidado-e-dedicacao-na-producao.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit1") %></p>
                         <figcaption><% response.Write traduzir("txtFeaturesHomeRes1") %></figcaption>
+                        <br>
                         <button class="bt bt-saibaMais" onclick="location.href='producao.asp'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoSaibaMaisSobreProducao") %></button>
                     </figure>
                     <figure class="scrollme animateme"
@@ -77,11 +77,11 @@
                         data-easing="easeinout"
                         data-opacity="0"
                         data-translatey="60"
-                        data-rotatey="180"
-                    >
+                        data-rotatey="180">
                         <img src="images/qualidade-e-a-nossa-prioridade.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit2") %></p>
                         <figcaption><% response.Write traduzir("txtFeaturesHomeRes2") %></figcaption>
+                        <br>
                         <button class="bt bt-saibaMais" onclick="location.href='a-norsal.asp#certificacao'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtBotaoConfiraNossaCertificacao") %></button>
                     </figure>
                     <figure class="scrollme animateme"
@@ -91,11 +91,11 @@
                         data-easing="easeinout"
                         data-opacity="0"
                         data-translatey="60"
-                        data-rotatey="180"
-                    >
+                        data-rotatey="180">
                         <img src="images/uma-das-maiores-salinas-da-america-latina.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit3") %></p>
                         <figcaption><% response.Write traduzir("txtFeaturesHomeRes2") %></figcaption>
+                        <br>
                         <button class="bt bt-saibaMais" onclick="location.href='a-norsal.asp'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtConhecaNossaSalina") %></button>
                     </figure>
                 </div>        
@@ -163,6 +163,7 @@
                         <div class="item">
                             <h2><% response.Write traduzir("txtTitFeature1Sec3Home") %></h2>
                             <p><% response.Write traduzir("txtResFeature1Sec3Home") %></p>
+                            <br>
                             <button class="bt bt-branco" onclick="location.href='producao.asp'"><i class="fa fa-chevron-right azul-texto" aria-hidden="true"></i><% response.Write traduzir("txtBotaoConhecaProducao") %></button>
                         </div>
                     </div>

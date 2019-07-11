@@ -39,6 +39,10 @@ Dim oMarcas
 Set oMarcas = New Conexao
 oMarcas.AbreConexao()
 
+Dim oProdutos
+Set oProdutos = New Conexao
+oProdutos.AbreConexao()
+
 
 oSegmentos.AbreTabela("select id,nome,nome_eng from "&oSegmentos.prefixoTabela&"segmentos where ativo='s' order by id asc")
 oMarcas.AbreTabela("select id,foto,nome,nome_eng,texto,texto_eng from "&oMarcas.prefixoTabela&"marcas where ativo='s' order by id asc")
@@ -109,7 +113,17 @@ oListas.AbreTabela("select id,idSegmento,idMarca,foto,nome,nome_eng,resumo,resum
             </header>            
             <div class="desc-pag-prod">
                 <div class="container">
-                    <p><% response.Write traduzir("txtSection2ProdutosTexto") %></p>
+                    <p>
+                        <%
+                            if idSegmento=1 then
+                                response.Write traduzir("txtSection2ProdutosTextoConsumidor")
+                            elseif idSegmento=2 then
+                                response.Write traduzir("txtSection2ProdutosTextoIndustria")
+                            elseif idSegmento=3 then
+                                response.Write traduzir("txtSection2ProdutosTextoPecuaria")
+                            end if
+                        %>
+                    </p>
                 </div>            
             </div>
         </section>
@@ -124,9 +138,21 @@ oListas.AbreTabela("select id,idSegmento,idMarca,foto,nome,nome_eng,resumo,resum
                         else 
                             varAtiva=""
                         end if
-                    %>
-                    <div class="aba <%=varAtiva%>" onclick="location.href='produtos.asp?idSegmento=<%=session("Norsal_IdSegmento")%>&idMarca=<%=oMarcas.rs("id")%>#segmentos-prod'"><img src="<%=oMarcas.enderecoMarcas%><%=oMarcas.rs("foto")%>" alt="<%=oMarcas.rs("nome"&sufixo_lang)%>" ></div>
-                    <%
+
+                        'vefifica se existem produtos cadastrados para essa marca
+                        oProdutos.AbreTabela("select id,idSegmento,idMarca,ativo from "&oProdutos.prefixoTabela&"produtos where ativo='s' AND idSegmento="&idSegmento&" AND idMarca="&oMarcas.rs("id"))
+                        if oProdutos.rs.eof=true then
+                            'link da marca desativado
+                            %>
+                                <div class="aba_"><img src="<%=oMarcas.enderecoMarcas%><%=oMarcas.rs("foto")%>" alt="<%=oMarcas.rs("nome"&sufixo_lang)%>" ></div>
+                            <%
+                        else
+                            'link da marca ativo
+                            %>
+                                <div class="aba <%=varAtiva%>" onclick="location.href='produtos.asp?idSegmento=<%=session("Norsal_IdSegmento")%>&idMarca=<%=oMarcas.rs("id")%>#segmentos-prod'"><img src="<%=oMarcas.enderecoMarcas%><%=oMarcas.rs("foto")%>" alt="<%=oMarcas.rs("nome"&sufixo_lang)%>" ></div>
+                            <%
+                        end if
+                   
                     oMarcas.rs.MoveNext()
                     wend
                     oMarcas.rs.Close()

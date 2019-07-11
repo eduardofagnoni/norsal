@@ -36,7 +36,7 @@ Fontes
   ----------------------------------------------------------------------*/
 html,
 body {
-  font-size: 62.5%;
+  font-size: 65.5%;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -239,9 +239,9 @@ Header e Menu - Fim
 	Botoneira
 -----------------------------------------------*/
 .bt {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   text-transform: uppercase;
   text-align: center;
   -webkit-transition: 0.2s ease-in-out;
@@ -254,7 +254,8 @@ Header e Menu - Fim
 .bt-branco {
   background-color: transparent;
   min-width: 240px;
-  padding: 8px 15px;
+  padding: 16px 15px;
+  /*8px 15px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
@@ -278,7 +279,8 @@ Header e Menu - Fim
 .bt-azul {
   background-color: transparent;
   min-width: 240px;
-  padding: 8px 15px;
+  padding: 16px 15px;
+  /*8px 15px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 700;
@@ -293,7 +295,8 @@ Header e Menu - Fim
 .bt-azul-cinza {
   background-color: transparent;
   min-width: 240px;
-  padding: 8px 15px;
+  padding: 16px 15px;
+  /*8px 15px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 700;
@@ -318,7 +321,8 @@ Header e Menu - Fim
 /* bt - Saiba Mais ----------------------------*/
 .bt-saibaMais {
   background-color: transparent;
-  padding: 5px 15px;
+  padding: 10px 15px;
+  /*5px 15px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 700;
@@ -332,7 +336,8 @@ Header e Menu - Fim
 /* bt - Produtos ------------------------------*/
 .bt-produtos {
   background-color: transparent;
-  padding: 5px 15px;
+  padding: 10px 15px;
+  /*5px 15px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 700;
@@ -346,7 +351,8 @@ Header e Menu - Fim
 /* bt - bt-produtos-azul ------------------------------*/
 .bt-produtos-azul {
   background-color: #2dc4db;
-  padding: 5px 15px;
+  padding: 10px 15px;
+  /*5px 15px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
@@ -828,7 +834,8 @@ div.features figure img {
   margin: 0 0 20px 0;
 }
 div.features figure figcaption {
-  font-size: 2em;
+  font-size: 2.3em;
+  /*2em;*/
   font-family: 'Open Sans', sans-serif;
   color: #005282;
   margin: 0 0 20px 0;
@@ -866,7 +873,8 @@ div.features article p {
     border-spacing: 3px;
   }
   div.features figure figcaption {
-    font-size: 2em;
+    font-size: 2.3em;
+    /*2em;*/
     font-family: 'Open Sans', sans-serif;
     color: #005282;
     margin: 0 0 40px 0;
@@ -1016,6 +1024,7 @@ section#topos {
     font-weight: 300;
     color: #fff;
     font-size: 2em;
+    line-height: 1.7em;
   }
   section#topos header.inline h1 {
     display: inline-block;
@@ -1319,8 +1328,10 @@ section#topos {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #fff;
-    font-size: 1.9em;
+    font-size: 2.4em;
+    /*1.9em;*/
     margin: 15px 20px 30px 0;
+    line-height: 1.7em;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -1395,7 +1406,8 @@ section#topos {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #fff;
-    font-size: 1.9em;
+    font-size: 2.4em;
+    /*1.9em;*/
     margin: 15px 0 30px 0;
   }
 }
@@ -1431,7 +1443,8 @@ section#topos {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #fff;
-    font-size: 1.9em;
+    font-size: 2.4em;
+    /*1.9em;*/
     margin: 15px 0 30px;
   }
 }
@@ -1454,8 +1467,13 @@ section.textos-laterais header.inline div.lats > button {
 section.textos-laterais header.inline div.lats p {
   font-family: 'Open Sans', sans-serif;
   color: #005282;
-  font-size: 2em;
+  font-size: 2.3em;
+  /*2em;*/
   vertical-align: text-bottom;
+}
+section.textos-laterais p {
+  font-size: 2.3em;
+  /*2em;*/
 }
 section.textos-laterais header.inline img {
   max-width: 100%;
@@ -1552,6 +1570,7 @@ section.textos-laterais header.inline img {
 -----------------------------------------------*/
 section.lista-de-produtos {
   background-color: #fff;
+  padding: 0 0 70px 0;
 }
 section.lista-de-produtos ul {
   display: block;
@@ -2054,7 +2073,7 @@ section.abas-pag-produtos .desc-pag-prod p {
 }
 section.abas-pag-produtos .quadro-abas-pag-produtos {
   position: relative;
-  margin-top: -18px;
+  margin-top: -21px;
 }
 section.abas-pag-produtos .quadro-abas-pag-produtos {
   display: table;
@@ -2179,6 +2198,12 @@ section.abas-marcas-produtos .quadro-abas-marcas-produtos .aba {
   padding: 25px 8px 23px 8px;
   height: 132px;
 }
+section.abas-marcas-produtos .quadro-abas-marcas-produtos .aba_ {
+  display: table-cell;
+  text-align: center;
+  padding: 25px 8px 23px 8px;
+  height: 132px;
+}
 section.abas-marcas-produtos .quadro-abas-marcas-produtos .aba:hover {
   background: #fff!important;
 }
@@ -2198,6 +2223,12 @@ section.abas-marcas-produtos .quadro-abas-marcas-produtos .ativa::after {
 }
 section.abas-marcas-produtos .quadro-abas-marcas-produtos .aba img {
   max-width: 100%;
+}
+section.abas-marcas-produtos .quadro-abas-marcas-produtos .aba_ img {
+  max-width: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 section.abas-marcas-produtos .quadro-abas-marcas-produtos .ativa {
   background: #fff!important;
@@ -2284,7 +2315,7 @@ ol.linha-do-tempo h3 {
 }
 ol.linha-do-tempo p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-size: 2.3em;
   color: #2da8db;
   font-weight: 700;
   text-transform: none;
@@ -2293,6 +2324,7 @@ ol.linha-do-tempo p {
 }
 ol.linha-do-tempo p + p {
   color: #fff;
+  font-weight: normal;
 }
 ol.linha-do-tempo li {
   width: 100%;
@@ -2612,7 +2644,7 @@ section.mapaMarca {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
   section.mapaMarca .malhas-e-vias li p small {
     text-transform: none;
@@ -2744,7 +2776,9 @@ section.nossos-projetos .projetos .item h3 {
 section.nossos-projetos .projetos .item p {
   font-family: 'Open Sans', sans-serif;
   color: #7d819c;
-  font-size: 1.6;
+  font-size: 2.3em;
+  /* 1.6em;*/
+  line-height: 1.5em;
 }
 section.nossos-projetos .projetos .item figure::before {
   content: "";
@@ -2901,8 +2935,9 @@ section.pag-int-resp img {
 }
 section.pag-int-resp p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.9em;
+  font-size: 2.3em;
   color: #212b65;
+  line-height: 1.5em;
 }
 section.pag-int-resp ol {
   list-style: none;

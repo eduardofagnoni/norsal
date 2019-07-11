@@ -51,8 +51,8 @@ end if
                     <li><a href="produtos.asp?idSegmento=<%=session("Norsal_IdSegmento")%>&idMarca=<%=session("Norsal_IdMarca")%>"><% response.Write traduzir("linkProdutos") %></a></li>
                     <li><a href="marcas.asp"><% response.Write traduzir("linkMarcas") %></a></li>
                     <li><a href="responsabilidade.asp"><% response.Write traduzir("linkResponsabilidade") %></a></li>
-                    <li><a href="fale-conosco.asp"><% response.Write traduzir("linkFaleConosco") %></a></li>
                     <li><a href="novidades.asp"><% response.Write traduzir("linkNovidades") %></a></li>
+                    <li><a href="fale-conosco.asp"><% response.Write traduzir("linkFaleConosco") %></a></li>                    
                 </ul>
                 <div class="clearfix"></div>
             </li>

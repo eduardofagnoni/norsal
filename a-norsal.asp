@@ -51,7 +51,7 @@
         <section class="container textos-laterais" style="padding-top:100px;padding-bottom:80px;">        
             <header class="inline row">
                 <div class="col-md-6 col-xs-12">
-                    <h2 style="text-transform:none"><% response.Write traduzir("txtSection2ANorsalTit") %></h2>
+                    <h2 style="text-transform:none;margin-bottom:20px;"><% response.Write traduzir("txtSection2ANorsalTit") %></h2>                    
                     <p><% response.Write traduzir("txtSection2ANorsalApoio") %></p>
                 </div>
                 <div class="col-md-6 col-xs-12">
@@ -487,7 +487,7 @@
             <div class="container">
                 <div class="col-md-5 col-xs-12">
                         <header>
-                            <h2 style="color:#fff;"><% response.Write traduzir("txtSection6ANorsalTit") %></h2>
+                            <h2 style="color:#fff;margin-bottom:8px;"><% response.Write traduzir("txtSection6ANorsalTit") %></h2>
                         </header> 
                         <p><% response.Write traduzir("txtSection6ANorsalTexto") %></p>
 
