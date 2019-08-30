@@ -36,10 +36,10 @@ cadastro_dados_iniciais = datasys&" - IP:"&ipCapturado&":"&portaUtilizada&" - Do
 ultima_alteracao = cadastro_dados_iniciais
 
 'varíaveis do formulário
-varNome = SafeSQL(request.form("txtNome"))
-varNomeEng = SafeSQL(request.form("txtNome_eng"))
-varResumo = SafeSQL(request.form("txtResumo"))
-varResumoEng = SafeSQL(request.form("txtResumo_eng"))
+varNome = SafeSQL_HTML(request.form("txtNome"))
+varNomeEng = SafeSQL_HTML(request.form("txtNome_eng"))
+varResumo = SafeSQL_HTML(request.form("txtResumo"))
+varResumoEng = SafeSQL_HTML(request.form("txtResumo_eng"))
 varTexto = SafeSQL_HTML(request.form("txtTextoProjeto"))
 varTextoEng = SafeSQL_HTML(request.form("txtTextoProjeto_eng"))
 varDataProjeto = SafeSQL(request.form("txtDataProjeto"))

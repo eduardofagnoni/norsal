@@ -38,10 +38,10 @@ ultima_alteracao = cadastro_dados_iniciais
 'varíaveis do formulário
 varSegmento = SafeSQL(request.form("txtSegmento"))
 varMarca = SafeSQL(request.form("txtMarca"))
-varNome = SafeSQL(request.form("txtNome"))
-varNomeEng = SafeSQL(request.form("txtNome_eng"))
-varResumo = SafeSQL(request.form("txtResumo"))
-varResumoEng = SafeSQL(request.form("txtResumo_eng"))
+varNome = SafeSQL_HTML(request.form("txtNome"))
+varNomeEng = SafeSQL_HTML(request.form("txtNome_eng"))
+varResumo = SafeSQL_HTML(request.form("txtResumo"))
+varResumoEng = SafeSQL_HTML(request.form("txtResumo_eng"))
 varEmbalagem = SafeSQL_HTML(request.form("txtEmbalagem"))
 varEmbalagemEng = SafeSQL_HTML(request.form("txtEmbalagem_eng"))
 varRegistroIncluido = "s"

@@ -2,7 +2,7 @@
 <!--#include file="functions/__pega_nome_da_pagina.asp"-->
 
 <!DOCTYPE html>
-<html lang="pt-BR"></html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,7 +94,7 @@
                         data-rotatey="180">
                         <img src="images/uma-das-maiores-salinas-da-america-latina.jpg" alt="" title="" >
                         <p><% response.Write traduzir("txtFeaturesHomeTit3") %></p>
-                        <figcaption><% response.Write traduzir("txtFeaturesHomeRes2") %></figcaption>
+                        <figcaption><% response.Write traduzir("txtFeaturesHomeRes3") %></figcaption>
                         <br>
                         <button class="bt bt-saibaMais" onclick="location.href='a-norsal.asp'"><i class="fa fa-chevron-right" aria-hidden="true"></i> <% response.Write traduzir("txtConhecaNossaSalina") %></button>
                     </figure>

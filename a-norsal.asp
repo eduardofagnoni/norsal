@@ -448,9 +448,9 @@
                                         <img src="plugins/responsiveCarousel/img/thumb02.jpg" alt="danny antonucci">
                                 </div>   
 
-                                <div class="crsl-item">
+                                <!--<div class="crsl-item">
                                         <img src="plugins/responsiveCarousel/img/thumb01.jpg" alt="nyc subway">
-                                </div>                      
+                                </div>-->
                             </div>
                         </div>
                     </div>                

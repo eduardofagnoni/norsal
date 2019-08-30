@@ -28,7 +28,7 @@ linkProdutos = "Produtos | Products"
 linkMarcas = "Marcas | Brands"
 linkResponsabilidade = "Responsabilidade | Responsibility"
 linkFaleConosco = "Fale com a gente | Talk to us"
-linkNovidades = "Novidades | News"
+linkNovidades = "Blog | Blog"
 linkConsumidor = "Consumidor | Consumer"
 linkIndustria = "Indústria | Industry"
 linkPecuaria = "Pecuária | livestock"
@@ -106,7 +106,7 @@ txtApoioCadastrese = "e receba mais informações e novidades. | and get more in
 'banner home
 '**********************************************//
 txtBannerHome = "A número 1 <br>em vendas de <br>sal no Brasil. | The number 1 in <br>sales of salt <br>in Brazil."
-txtBannerHomeLinha2 = "Com a linha mais diversificada do mercado. | With the most diversified line of the market."
+txtBannerHomeLinha2 = "Com a linha de sal refinado mais diversificada do mercado. | With the most diversified line of the market."
 txtBotaoBannerHome = "Conheça a Norsal | Know the Norsal"
 
 '************************************************
@@ -121,8 +121,8 @@ txtBotaoSection1Home = "Conheça nossas marcas | "
 '**********************************************//
 txtFeaturesHomeTit1 = "CUIDADO E DEDICAÇÃO NA PRODUÇÃO DE CADA CRISTAL DE SAL. | "
 txtFeaturesHomeRes1 = "Nosso processo de fabricação é feito de forma rigorosa, em várias etapas, assegurando as características originais do sal. Um padrão de excelência que só a Norsal oferece. | "
-txtFeaturesHomeTit2 = "QUALIDADE - NOSSA PRIORIDADE. | "
-txtFeaturesHomeRes2 = "No nosso caso, tamanho faz toda a diferença. A salina Miramar fica em Areia Branca, Rio Grande do Norte, e produz centenas de milhares de toneladas de sal, por ano. | "
+txtFeaturesHomeTit2 = "QUALIDADE É NOSSA PRIORIDADE. | "
+txtFeaturesHomeRes2 = "Somos referência na produção e distribuição de sal. A primeira salineira, no Brasil, a conquistar o selo ISO 22000, com qualidade reconhecida internacionalmente. | "
 txtFeaturesHomeTit3 = "UMA DAS MAIORES SALINAS DA AMÉRICA LATINA. | "
 txtFeaturesHomeRes3 = "No nosso caso, tamanho faz toda a diferença. A salina Miramar fica em Areia Branca, Rio Grande do Norte, e produz centenas de milhares de toneladas de sal, por ano. | "
 
@@ -136,11 +136,11 @@ txtApoioSection2Home = "A NORSAL está presente em todos os lugares. Desde entre
 'section 3 home
 '**********************************************//
 txtTitFeature1Sec3Home = "360 MIL TONELADAS DE SAL POR ANO. | "
-txtResFeature1Sec3Home = "Temos uma salina com uma imensa capacidade de produção, que nos permite distribuir o portfólio mais variado de produtos, para os nossos consumidores. | "
+txtResFeature1Sec3Home = "Temos uma salina com uma grande capacidade de produção, que nos permite distribuir o portfólio mais variado de produtos, para os nossos consumidores. | "
 txtTitFeature2Sec3Home = "COMPROMISSO COM A NATUREZA. | "
 txtResFeature2Sec3Home = "Nosso cuidado vai muito além do sal. <br>Além de um processo de produção totalmente natural, desenvolvemos diversos programas socioambientais. | "
 txtTitFeature3Sec3Home = "DISTRIBUIÇÃO PARA TODO O BRASIL. | "
-txtResFeature3Sec3Home = "Estamos presentes nos quatro cantos do Brasil. Utilizamos malhas rodoviárias, ferroviárias e marítimas, para que você receba os nossos produtos onde quer que esteja. | "
+txtResFeature3Sec3Home = "Estamos presentes nos quatro cantos do Brasil. Utilizamos malhas rodoviárias, ferroviárias, além de serviços marítimos de cabotagem em transporte de containers, para que você receba os nossos produtos onde quer que esteja. | "
 
 
 
@@ -163,17 +163,17 @@ txtSection1ANorsalRes2 = "Colaboradores. | "
 txtSection1ANorsalRes3 = "Hectares <br>de salinas | "
 
 txtSection2ANorsalTit = "Nossa receita de sucesso. | "
-txtSection2ANorsalApoio = "Nossos produtos são voltados para as mais diversas aplicações, sempre com o mais alto padrão de qualidade, produtividade, sustentabilidade e segurança. Somos uma verdadeira referência quando o assunto é qualidade e atendimento às necessidades do mercado de alimentação, tanto humana quanto animal. | "
+txtSection2ANorsalApoio = "Há mais de 40 anos, a Norsal é referência em alimentação humana, com os mais altos padrões de qualidade, produtividade, sustentabilidade e segurança. Os produtos Norsal também são voltados para diversas aplicações, desde práticas industriais até a nutrição de animais. | "
 
 txtSection3ANorsalTit = "Nossa história | "
 
 txtLinhaDoTempoANorsalAno1 = "1973 | "
 txtLinhaDoTempoANorsalTit1 = "Fundação da Empresa. | "
-txtLinhaDoTempoANorsalTexto1 = "Nasce a Norsal, a salineira mais inovadora do segmento, trazendo um alto investimento em tecnologia e um time extremamente capacitado. A empresa que fará história no mercado internacional. | "
+txtLinhaDoTempoANorsalTexto1 = "Nasce a Norsal, a produtora de sal mais inovadora do segmento. Em sua fundação, a empresa já contava com um extenso time de especialistas e a única salina no Brasil projetada com tecnologia francesa. | "
 
 txtLinhaDoTempoANorsalAno2 = "1994 | "
 txtLinhaDoTempoANorsalTit2 = "A Primeira Refinaria. | "
-txtLinhaDoTempoANorsalTexto2 = "É neste momento que a Norsal dá seu primeiro grande passo, iniciando a produção de sua Refinaria número 1 em um complexo montado com tecnologia francesa. | "
+txtLinhaDoTempoANorsalTexto2 = "A Norsal dá o seu primeiro grande passo. Inicia a produção de sua refinaria número 1, com uma dimensão, até então, inédita no nordeste Brasileiro. | "
 
 txtLinhaDoTempoANorsalAno3 = "1995 | "
 txtLinhaDoTempoANorsalTit3 = "A produção do Sal Lebre. | "
@@ -185,7 +185,7 @@ txtLinhaDoTempoANorsalTexto4 = "Após um intenso crescimento, a Norsal inaugura 
 
 txtLinhaDoTempoANorsalAno5 = "2007 | "
 txtLinhaDoTempoANorsalTit5 = "A Terceira Refinaria. | "
-txtLinhaDoTempoANorsalTexto5 = "Nove anos após a inauguração de sua segunda refinaria, o complexo Miramar inicia a produção de sua terceira refinaria, com um altíssimo avanço na tecnologia de seus processos e maquinários. | "
+txtLinhaDoTempoANorsalTexto5 = "Anos após a inauguração de sua segunda refinaria, o complexo Miramar inicia a produção de sua terceira refinaria, com um altíssimo avanço na tecnologia de seus processos e maquinários. | "
 
 txtLinhaDoTempoANorsalAno6 = "2011 | "
 txtLinhaDoTempoANorsalTit6 = "Prêmio Construindo a Nação. | "
@@ -209,15 +209,15 @@ txtLinhaDoTempoANorsalTexto10 = "Com muito orgulho, a Norsal torna-se a única d
 
 txtSection4ANorsalTit = "A Salina Miramar. | "
 txtSection4ANorsalApoio = "Uma das maiores da América Latina. | "
-txtSection4ANorsalTexto = "<p>Localizada em Areia Branca, Rio Grande do Norte, a salina Miramar tem um volume de produção inigualável e é a fonte de todos os produtos distribuídos pela Norsal.</p><p>Com 1.620 hectares, ela foi projetada e construída com tecnologia francesa, e está entre as mais modernas do mundo. Não é à toa que a Norsal é uma das gigantes em manufatura de sal.</p> | "
+txtSection4ANorsalTexto = "<p>Localizada em Areia Branca, Rio Grande do Norte, a salina Miramar tem um volume de produção surpreendente e é a fonte de todos os produtos distribuídos pela Norsal.</p><p>Com 1.620 hectares, ela foi projetada e construída com tecnologia francesa, e está entre as mais modernas do mundo. Não é à toa que a Norsal é uma das gigantes em manufatura de sal refinado e moído.</p> | "
 
 txtSection5ANorsalTit = "O SAL COM O MAIOR <br>TEOR DE RECONHECIMENTO. | "
 txtSection5ANorsalTexto = "<strong>A Norsal é a primeira salineira do Brasil a conquistar a certificação ISO 22000 para sal refinado.</strong> <br>Um código de normas internacionais, criado em 2005, que atesta o alto padrão de gestão da segurança alimentar. <br> Tal regulamento, visa controlar os chamados 'pontos críticos de controle', com a finalidade de evitar a contaminação do produto e garantir a segurança do consumidor. Além disso, assegura a alta qualidade da cadeia de produção do alimento. <br>Prova de que o compromisso pelo bem-estar dos consumidores deve estar sempre em primeiro lugar. | "
 
-txtSection6ANorsalTit = "Com centros de abastecimento no estado de São Paulo, Rio de Janeiro, Santa Catarina, Rio Grande do Sul e Amazonas. | "
-txtSection6ANorsalTexto = "A Norsal é a única empresa que distribui para todos os estados brasileiros. Sua sede administrativa está localizada em São Paulo, com centros de abastecimento também em Manaus, Rio de Janeiro, São Francisco do Sul e Porto Alegre. | "
+txtSection6ANorsalTit = "A MARCA QUE ESTÁ NOS 4 CANTOS DO BRASIL | "
+txtSection6ANorsalTexto = "A Norsal é a única empresa que distribui para todos os estados brasileiros. Sua sede administrativa está localizada em São Paulo, com centros de abastecimento nos estados de São Paulo, Rio de Janeiro, Santa Catarina, Rio Grande do Sul e Amazonas. | "
 txtSection6ANorsalSubTit = "Norsal a bordo | "
-txtSection6ANorsalTexto2 = "Nossa preocupação não está apenas na fabricação do sal. O transporte dos produtos Norsal é feito, em grande parte, através da cabotagem. Além do enorme alcance, tal processo substitui, anualmente, o uso de pelo menos 6.000 carretas nas rodovias brasileiras, reduzindo de forma considerável o tráfego e a emissão de gases poluentes. Cada navio compartilhado emite aproximadamente 36 vezes menos gás carbônico na atmosfera. | "
+txtSection6ANorsalTexto2 = "Nossa preocupação não está apenas na fabricação do sal. O transporte dos produtos Norsal é feito, em grande parte, através da cabotagem. Além do enorme alcance, tal processo substitui, anualmente, o uso de pelo menos 6.000 carretas nas rodovias brasileiras, reduzindo de forma considerável o tráfego e a emissão de gases poluentes. Para cada tonelada transportada, os navios compartilhados emitem 30 vezes menos carbono do que o modal rodoviário. | "
 txtSection6ANorsalItem1 = "Malha Rodoviária<br><small>Todo o Brasil.</small> | "
 txtSection6ANorsalItem2 = "Malha Ferroviária<br><small>Sul, Sudeste e Centro Oeste.</small> | "
 txtSection6ANorsalItem3 = "Vias Marítimas<br><small>Sul, Sudeste e Norte.</small> | "
@@ -238,7 +238,7 @@ txtTopoMarcasTexto = "Somos a número 1 em vendas. Nossas cinco marcas são refe
 
 txtMarcasNorsal = "Desenvolvido para atender todas as normas e exigências da indústria, o sal Norsal conta com diversas especificações técnicas e é fabricado com a mais alta tecnologia de produção. | "
 txtMarcasSalLebre = "Um sal de altíssima qualidade. A marca com o maior portfólio de sal do mercado e com uma linha Gourmet que agrada os paladares mais exigentes. | "
-txtMarcasMiramar = "Sal refinado, moído ou para churrasco. Distribuído apenas em algumas regiões do Brasil e assegurado pelo selo de qualidade Norsal. | "
+txtMarcasMiramar = "Sal refinado, moído ou para churrasco. Distribuído em todo o Brasil e assegurado pelo selo de qualidade Norsal. | "
 txtMarcasAlmirante = "Sal moído, com granulometria controlada e adequado para diversas aplicações. Desde a utilização na indústria, até a mesa do consumidor. | "
 txtMarcasSalPiramide = "Sal moído iodado com aplicação na mesa e na cozinha. Certificado pelo selo de qualidade Norsal e seus rigorosos processos. | "
 
@@ -269,7 +269,7 @@ txtSection4ProducaoTexto1 = "Ele já foi moeda de troca, já ergueu impérios e 
 txtSection4ProducaoTit2 = "A importância do sal. | "
 txtSection4ProducaoTexto2 = "O sal é o segundo mineral não energético mais produzido e utilizado no mundo, e está ativamente presente em nossas vidas desde as primeiras civilizações. Confira nossa matéria completa. | "
 txtSection4ProducaoTit3 = "As vantagens do consumo consciente. | "
-txtSection4ProducaoTexto3 = "Você sabe por que o sal marinho é o mais saudável do mundo? Sabe qual a importância do iodo no sal manufaturado? Respondendo algumas perguntas, vamos ajudá-lo a cosumir sal conscientemente. | "
+txtSection4ProducaoTexto3 = "Você sabe por que o sal marinho é o mais saudável do mundo? Respondendo algumas perguntas, vamos ajudá-lo a cosumir sal conscientemente. | "
 
 
 '*********************************************************************************************
@@ -361,13 +361,13 @@ txtFaleConoscoFormEmpresa = "Empresa | "
 txtFaleConoscoFormSetor = "Setor | "
 txtFaleConoscoFormMsg = "Mensagem | "
 
-txtFaleConoscoFormMsgFinal = "Se você é <strong>transportador</strong> e está na região de Mossoró/RN, entre já em contato conosco. | "
+txtFaleConoscoFormMsgFinal = "Se você é <strong>transportador</strong> e está na região de Mossoró/RN, entre em contato com a Central de Logística. | "
 
 txtFaleConoscoCentrosItem1Tit = "ADMINISTRAÇÃO E VENDAS | "
 txtFaleConoscoCentrosItem1End = "Av. Dr. Cardoso de Mello, 900 <br>Vila Olímpia - São Paulo/SP <br>CEP: 04548-003 <br>Tel: 55 (11) 3767-3810 <br>vendas@norsal.com.br | "
 
 txtFaleConoscoCentrosItem2Tit = "CENTRO DE DISTRIBUIÇÃO ITAPEVI | "
-txtFaleConoscoCentrosItem2End = "Av. Nova São Paulo, 557 - Galpão 1 <br>Bairro Itaqui - Itapevi/SP <br>CEP: 06696-100 <br>Tel: 55 (11) 3714-6971 <br>Tel: 55 (11) 3714-6926 | "
+txtFaleConoscoCentrosItem2End = "Av. Nova São Paulo, 557 - Galpão 10 <br>Bairro Itaqui - Itapevi/SP <br>CEP: 06696-100 <br>Tel: 55 (11) 3714-6971 <br>Tel: 55 (11) 3714-6926 | "
 
 txtFaleConoscoCentrosItem3Tit = "UNIDADE INDUSTRIAL | "
 txtFaleConoscoCentrosItem3Comp = "Fabricação, Refino e Embalagem | "
@@ -386,7 +386,7 @@ txtFaleConoscoCentrosItem4End = "Rua Jeremias da Rocha, 165 <br>Santo Antonio - 
 '******
 '*********************************************************************************************
 '*********************************************************************************************
-txtTopoNovidadesTit = "Nossas <br>Novidades. | "
+txtTopoNovidadesTit = "Blog<br>da Norsal. | "
 txtTopoNovidadesRes = "Aqui, você fica por dentro de tudo o que acontece na Norsal. Estamos constantemente nos atualizando, lançando novos projetos, desenvolvendo novos produtos e muito mais. | "
 
 
@@ -398,7 +398,7 @@ txtTopoNovidadesRes = "Aqui, você fica por dentro de tudo o que acontece na Nor
 '******
 '*********************************************************************************************
 '*********************************************************************************************
-txtTopoNovidadesInternaTit = "Nossas <br>Novidades. | "
+txtTopoNovidadesInternaTit = "Blog<br>da Norsal. | "
 txtTopoNovidadesInternaRes = "Aqui, você fica por dentro de tudo o que acontece na Norsal. Estamos constantemente nos atualizando, lançando novos projetos, desenvolvendo novos produtos e muito mais. | "
 
 
